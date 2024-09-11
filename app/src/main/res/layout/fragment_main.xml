@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/main"
+            android:textColor="@color/typography_2"
+            android:textSize="@dimen/medium_size_text"
+            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+            app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/standard_icon_size"
+            android:layout_height="@dimen/standard_icon_size"
+            android:layout_margin="@dimen/small_125"
+            android:padding="@dimen/small_50"
+            android:src="@drawable/ic_profile_with_notification"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_listening"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_150"
+        android:layout_marginTop="@dimen/normal_100"
+        android:backgroundTint="@color/inputs_color"
+        app:cardCornerRadius="@dimen/small_150"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/normal_125"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_100"
+                    android:fontFamily="@font/font_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/listening"
+                    android:textColor="@color/typography_3"
+                    android:textSize="@dimen/medium_size_text"
+                    app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                    app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ProgressBar
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:max="100"
+                        android:progress="60"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="@color/brand_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="@dimen/normal_100"
+                        android:layout_marginStart="@dimen/small_75"
+                        android:fontFamily="@font/font_bold"
+                        android:gravity="center_horizontal"
+                        android:text="60%"
+                        android:textColor="@color/brand_color"
+                        android:textSize="@dimen/medium_size_text"
+                        app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                        app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/normal_200"
+                android:rotation="180"
+                android:src="@drawable/ic_back"
+                app:tint="@color/brand_color" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_reading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_150"
+        android:layout_marginTop="@dimen/normal_100"
+        android:backgroundTint="@color/inputs_color"
+        app:cardCornerRadius="@dimen/small_150"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/normal_125"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_100"
+                    android:fontFamily="@font/font_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/reading"
+                    android:textColor="@color/typography_3"
+                    android:textSize="@dimen/medium_size_text"
+                    app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                    app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ProgressBar
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:max="100"
+                        android:progress="60"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="@color/brand_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="@dimen/normal_100"
+                        android:layout_marginStart="@dimen/small_75"
+                        android:fontFamily="@font/font_bold"
+                        android:gravity="center_horizontal"
+                        android:text="60%"
+                        android:textColor="@color/brand_color"
+                        android:textSize="@dimen/medium_size_text"
+                        app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                        app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/normal_200"
+                android:rotation="180"
+                android:src="@drawable/ic_back"
+                app:tint="@color/brand_color" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_speaking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_150"
+        android:layout_marginTop="@dimen/normal_100"
+        android:backgroundTint="@color/inputs_color"
+        app:cardCornerRadius="@dimen/small_150"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/normal_125"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_100"
+                    android:fontFamily="@font/font_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/speaking"
+                    android:textColor="@color/typography_3"
+                    android:textSize="@dimen/medium_size_text"
+                    app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                    app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ProgressBar
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:max="100"
+                        android:progress="60"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="@color/brand_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="@dimen/normal_100"
+                        android:layout_marginStart="@dimen/small_75"
+                        android:fontFamily="@font/font_bold"
+                        android:gravity="center_horizontal"
+                        android:text="60%"
+                        android:textColor="@color/brand_color"
+                        android:textSize="@dimen/medium_size_text"
+                        app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                        app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/normal_200"
+                android:rotation="180"
+                android:src="@drawable/ic_back"
+                app:tint="@color/brand_color" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_writing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_150"
+        android:layout_marginTop="@dimen/normal_100"
+        android:backgroundTint="@color/inputs_color"
+        app:cardCornerRadius="@dimen/small_150"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/normal_125"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_100"
+                    android:fontFamily="@font/font_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/writing"
+                    android:textColor="@color/typography_3"
+                    android:textSize="@dimen/medium_size_text"
+                    app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                    app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ProgressBar
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:max="100"
+                        android:progress="60"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="@color/brand_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="@dimen/normal_100"
+                        android:layout_marginStart="@dimen/small_75"
+                        android:fontFamily="@font/font_bold"
+                        android:gravity="center_horizontal"
+                        android:text="60%"
+                        android:textColor="@color/brand_color"
+                        android:textSize="@dimen/medium_size_text"
+                        app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                        app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/normal_200"
+                android:rotation="180"
+                android:src="@drawable/ic_back"
+                app:tint="@color/brand_color" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

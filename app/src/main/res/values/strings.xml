@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Edumeet</string>
+    <string name="text_next">Next</string>
+    <string name="enter_text">Are you already using EducatorHub? <u><font fgcolor='#FF353E81'> Enter</font></u></string>
+    <string name="not_registered">Not registered yet?<u><font fgcolor='#FF353E81'> Registration</font></u></string>
+    <string name="text_title_page_1">Confidence</string>
+    <string name="text_description_page_1">With speaking lessons, you will speak in a short time</string>
+    <string name="text_title_page_2">Patience</string>
+    <string name="text_description_page_2">Take your time to learn. Develop a habit and make it a part of your daily life</string>
+    <string name="text_title_page_3">Modern security</string>
+    <string name="text_description_page_3">We will provide you with the best and most modern security</string>
+    <string name="enter">Enter</string>
+    <string name="number">Number</string>
+    <string name="text_prefix_code">+998</string>
+    <string name="prefix_text_number">000 00 00</string>
+    <string name="password">Password</string>
+    <string name="forgot_password"><u>Forgot your password?</u></string>
+    <string name="main">Main</string>
+    <string name="listening">Listening</string>
+    <string name="reading">Reading</string>
+    <string name="speaking">Speaking</string>
+    <string name="writing">Writing</string>
+</resources>

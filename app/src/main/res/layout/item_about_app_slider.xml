@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="128dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="@dimen/about_app_pic_width"
+        android:layout_height="@dimen/about_app_pic_width"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/large_100"
+        android:src="@drawable/pic_illustration_1"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_regular"
+        android:gravity="center_horizontal"
+        android:textColor="@color/typography_2"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium_size_text"
+        tools:text="Confidence" />
+
+    <TextView
+        android:id="@+id/tv_about_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/normal_150"
+        android:layout_marginTop="@dimen/normal_100"
+        android:textAlignment="center"
+        android:maxHeight="200dp"
+        android:fontFamily="@font/font_bold"
+        android:textColor="@color/typography_1"
+        tools:text="With speaking lessons, you will speak in a short time" />
+
+</LinearLayout>

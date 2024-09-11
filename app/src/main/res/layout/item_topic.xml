@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/inputs_color"
+    app:cardCornerRadius="@dimen/normal_100"
+    android:layout_marginBottom="@dimen/normal_100"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic_topic" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/small_150"
+            android:layout_marginStart="@dimen/normal_100"
+            android:fontFamily="@font/font_bold"
+            android:textColor="@color/typography_3"
+            android:textSize="@dimen/medium_size_text"
+            tools:text="@string/listening" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
