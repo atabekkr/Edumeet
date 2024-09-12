@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_listening"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/normal_150"
+    android:layout_marginBottom="@dimen/small_100"
+    android:backgroundTint="@color/inputs_color"
+    app:cardCornerRadius="@dimen/normal_100"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_user_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/small_150"
+            android:layout_marginStart="@dimen/small_150"
+            app:cardCornerRadius="47dp">
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_ava" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/small_100"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_bold"
+                android:gravity="center_horizontal"
+                android:text="Margarita Sergeevna"
+                android:textColor="@color/brand_color"
+                app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_regular"
+                android:gravity="center_horizontal"
+                android:text="Such a shame"
+                android:textSize="10sp"
+                android:textColor="@color/brand_color"
+                app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/normal_100"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_notify1" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

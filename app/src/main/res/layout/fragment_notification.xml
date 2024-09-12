@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".ui.TopicsFragment">
+    tools:context=".ui.NotificationFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/app_bar"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/font_bold"
             android:gravity="center_horizontal"
-            android:text="@string/reading"
+            android:text="@string/notification"
             android:textColor="@color/typography_2"
             android:textSize="@dimen/medium_size_text"
             app:layout_constraintBottom_toBottomOf="@id/btn_back"
@@ -41,9 +41,8 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/normal_150"
         android:layout_marginTop="@dimen/normal_100"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_topic" />
+        tools:listitem="@layout/item_notification"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 </LinearLayout>

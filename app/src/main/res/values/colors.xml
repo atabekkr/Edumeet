@@ -12,4 +12,6 @@
     <color name="typography_2">#222222</color>
     <color name="inputs_color">#ECEAEA</color>
     <color name="typography_3">#1A2530</color>
+    <color name="typography_4">#000000</color>
+    <color name="typography_5">#9E9E9E</color>
 </resources>

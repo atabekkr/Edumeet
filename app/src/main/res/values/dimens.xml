@@ -43,5 +43,6 @@
     <dimen name="large_200">64dp</dimen>
     <dimen name="about_app_pic_width">300dp</dimen>
     <dimen name="standard_icon_size">48dp</dimen>
+    <dimen name="size_profile_image">80dp</dimen>
 
 </resources>

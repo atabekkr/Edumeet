@@ -5,23 +5,39 @@ import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.imax.edumeet.R
-import com.imax.edumeet.databinding.FragmentMainBinding
+import com.imax.edumeet.databinding.FragmentContainterBinding
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
-class MainFragment : Fragment(R.layout.fragment_main) {
+class ContainerFragment : Fragment(R.layout.fragment_containter) {
 
-    private val binding by viewBinding(FragmentMainBinding::bind)
+    private val binding by viewBinding(FragmentContainterBinding::bind)
+    private var navController: NavController? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.cardReading.setOnClickListener { findNavController().navigate(MainFragmentDirections.actionMainFragmentToTopicsFragment()) }
+        setupData()
 
+        binding.fab.setOnClickListener {
+            binding.bottomNavigationView.selectedItemId = R.id.homeFragment
+        }
+
+    }
+
+    private fun setupData() {
+
+        val navHostFragment =
+            childFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment
+
+        navController = navHostFragment.navController
+
+        binding.bottomNavigationView.setupWithNavController(navController!!)
 
         //get the drawable
         val myFabSrc = resources.getDrawable(R.drawable.ic_home)
@@ -35,7 +51,6 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         //set it to your fab button initialized before
         binding.fab.setImageDrawable(willBeWhite)
 
-        binding.bottomNavigationView.menu.findItem(R.id.home).isChecked = true
-
     }
+
 }

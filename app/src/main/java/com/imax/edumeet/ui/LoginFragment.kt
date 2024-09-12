@@ -32,14 +32,16 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
         binding.btnBack.setOnClickListener { findNavController().popBackStack() }
 
         binding.btnEnter.setOnClickListener {
-            val phoneNumber = "+998" + binding.etPhoneNumber.text.toString().filter { it.isDigit() }
-            val password = binding.inputPassword.text.toString()
-
-            if (phoneNumber.length >= 13 && password.length >= 8) {
-                findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToMainFragment())
-            } else {
-                snackBar("Phone number or password incorrect")
-            }
+            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToContainerFragment())
+//
+//            val phoneNumber = "+998" + binding.etPhoneNumber.text.toString().filter { it.isDigit() }
+//            val password = binding.inputPassword.text.toString()
+//
+//            if (phoneNumber.length >= 13 && password.length >= 8) {
+//                findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToContainerFragment())
+//            } else {
+//                snackBar("Phone number or password incorrect")
+//            }
 
         }
     }

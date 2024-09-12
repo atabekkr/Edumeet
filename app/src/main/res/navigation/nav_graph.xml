@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph.xml"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/containerFragment">
     <fragment
         android:id="@+id/aboutAppFragment"
         android:name="com.imax.edumeet.ui.AboutAppFragment"
@@ -19,21 +19,13 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
+            android:id="@+id/action_loginFragment_to_containerFragment"
+            app:destination="@id/containerFragment"
+            app:popUpTo="@id/nav_graph.xml" />
     </fragment>
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.imax.edumeet.ui.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
-        <action
-            android:id="@+id/action_mainFragment_to_topicsFragment"
-            app:destination="@id/topicsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/topicsFragment"
-        android:name="com.imax.edumeet.ui.TopicsFragment"
-        android:label="fragment_topics"
-        tools:layout="@layout/fragment_topics" />
+        android:id="@+id/containerFragment"
+        android:name="com.imax.edumeet.ui.ContainerFragment"
+        android:label="fragment_containter"
+        tools:layout="@layout/fragment_containter" />
 </navigation>

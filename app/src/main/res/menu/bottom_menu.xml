@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/statistic"
+        android:id="@+id/ratingFragment"
         android:title=""
         android:icon="@drawable/ic_statistic" />
 
     <item
-        android:id="@+id/home"
+        android:id="@+id/homeFragment"
         android:title=""
-        android:enabled="false" />
+        android:enabled="true" />
 
     <item
-        android:id="@+id/profile"
+        android:id="@+id/profileFragment"
         android:title=""
         android:icon="@drawable/ic_profile" />
 
