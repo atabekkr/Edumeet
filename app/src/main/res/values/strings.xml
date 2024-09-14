@@ -26,4 +26,6 @@
     <string name="login">Login</string>
     <string name="group">Group</string>
     <string name="notification">Notification</string>
+    <string name="reading_text">Reading Text</string>
+    <string name="go_to_test">Go to Test</string>
 </resources>

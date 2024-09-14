@@ -20,12 +20,7 @@ fun Long.milliSecondsToTimer(): String {
     return simpleDataFormat.format(this)
 }
 
-fun Fragment.showKeyboard() {
-    val imm = requireContext().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-    imm.toggleSoftInput(InputMethodManager.HIDE_NOT_ALWAYS, 0)
-}
-
-fun View.hideKeyboard() {
-    val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-    imm.hideSoftInputFromWindow(windowToken, 0)
+fun Context.getResourceId(imageName: String): Int {
+    val image = imageName.dropLast(4)
+    return this.resources.getIdentifier(image, "drawable", this.packageName)
 }

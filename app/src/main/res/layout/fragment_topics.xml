@@ -29,11 +29,11 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/font_bold"
             android:gravity="center_horizontal"
-            android:text="@string/reading"
             android:textColor="@color/typography_2"
             android:textSize="@dimen/medium_size_text"
             app:layout_constraintBottom_toBottomOf="@id/btn_back"
-            app:layout_constraintTop_toTopOf="@id/btn_back" />
+            app:layout_constraintTop_toTopOf="@id/btn_back"
+            tools:text="@string/reading" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

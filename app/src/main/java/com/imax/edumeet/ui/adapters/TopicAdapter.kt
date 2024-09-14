@@ -6,13 +6,21 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.imax.edumeet.databinding.ItemTopicBinding
-import com.imax.edumeet.models.TopicData
+import com.imax.edumeet.models.Topic
+import com.imax.edumeet.utils.getResourceId
 
-class TopicAdapter : ListAdapter<TopicData, TopicAdapter.TopicVh>(MyDiffUtil) {
+class TopicAdapter : ListAdapter<Topic, TopicAdapter.TopicVh>(MyDiffUtil) {
     inner class TopicVh(private val binding: ItemTopicBinding) : ViewHolder(binding.root) {
         fun bind() {
-            val item = getItem(adapterPosition)
-            binding.tvTitle.text = item.title
+            val topic = getItem(adapterPosition)
+            binding.tvTitle.text = topic.name
+            val context = binding.root.context
+            val resourceId = context.getResourceId(topic.image)
+            binding.ivPic.setImageResource(resourceId)
+
+            binding.root.setOnClickListener {
+                onItemClick.invoke(topic.id)
+            }
         }
     }
 
@@ -30,12 +38,17 @@ class TopicAdapter : ListAdapter<TopicData, TopicAdapter.TopicVh>(MyDiffUtil) {
         holder.bind()
     }
 
-    private object MyDiffUtil : DiffUtil.ItemCallback<TopicData>() {
-        override fun areItemsTheSame(oldItem: TopicData, newItem: TopicData): Boolean {
-            return oldItem == newItem
+    private var onItemClick: (topicId: Int) -> Unit = {}
+    fun setOnItemClickListener(aa: (topicId: Int) -> Unit) {
+        onItemClick = aa
+    }
+
+    private object MyDiffUtil : DiffUtil.ItemCallback<Topic>() {
+        override fun areItemsTheSame(oldItem: Topic, newItem: Topic): Boolean {
+            return oldItem.id == newItem.id
         }
 
-        override fun areContentsTheSame(oldItem: TopicData, newItem: TopicData): Boolean {
+        override fun areContentsTheSame(oldItem: Topic, newItem: Topic): Boolean {
             return oldItem == newItem
         }
 

@@ -68,5 +68,7 @@ dependencies {
     implementation(libs.dagger)
     ksp(libs.dagger.compiler)
 
+    implementation(libs.gson)
+
     implementation(libs.dots.indicator)
 }

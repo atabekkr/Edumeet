@@ -21,7 +21,14 @@
         android:id="@+id/topicsFragment"
         android:name="com.imax.edumeet.ui.TopicsFragment"
         android:label="fragment_topics"
-        tools:layout="@layout/fragment_topics" />
+        tools:layout="@layout/fragment_topics" >
+        <argument
+            android:name="sectionId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_topicsFragment_to_topicOverviewFragment"
+            app:destination="@id/topicOverviewFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.imax.edumeet.ui.ProfileFragment"
@@ -37,4 +44,16 @@
         android:name="com.imax.edumeet.ui.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/topicOverviewFragment"
+        android:name="com.imax.edumeet.ui.TopicOverviewFragment"
+        android:label="fragment_topic_overview"
+        tools:layout="@layout/fragment_topic_overview" >
+        <argument
+            android:name="topicId"
+            app:argType="integer" />
+        <argument
+            android:name="sectionId"
+            app:argType="integer" />
+    </fragment>
 </navigation>

@@ -1,0 +1,1552 @@
+{
+  "tests_classic": [
+    {
+      "topic_id": 101,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 1001,
+          "question": "Four years ago, Maria worked for a small HR services provider ...",
+          "options": [
+            "in the B2B sector.",
+            "in the B2C sector.",
+            "in both B2B and B2C sectors."
+          ],
+          "correct_answer": "in the B2B sector."
+        },
+        {
+          "id": 1002,
+          "question": "Maria has been in her current job ...",
+          "options": [
+            "for four years.",
+            "for three years.",
+            "for one year."
+          ],
+          "correct_answer": "for three years."
+        },
+        {
+          "id": 1003,
+          "question": "Maria's current role is focused ...",
+          "options": [
+            "only on learning and development.",
+            "on a number of HR topics.",
+            "only on payroll and she wants to do L&D."
+          ],
+          "correct_answer": "on a number of HR topics."
+        },
+        {
+          "id": 1004,
+          "question": "Maria ...",
+          "options": [
+            "did a diploma in L&D two years ago.",
+            "is doing a diploma in psychology at the moment.",
+            "Both options are true."
+          ],
+          "correct_answer": "Both options are true."
+        },
+        {
+          "id": 1005,
+          "question": "Maria will need to ...",
+          "options": [
+            "identify and devise an L&D strategy.",
+            "devise and implement an L&D strategy.",
+            "implement an L&D strategy that has already been devised."
+          ],
+          "correct_answer": "devise and implement an L&D strategy."
+        },
+        {
+          "id": 1006,
+          "question": "Maria ...",
+          "options": [
+            "will hear back from them next week.",
+            "has been invited to a second interview next week.",
+            "needs to call them next week to find out the next steps."
+          ],
+          "correct_answer": "will hear back from them next week."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 102,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 2001,
+          "question": "The project is important because …",
+          "options": [
+            "it will improve what the company is offering the customer.",
+            "it involves working with people from other departments.",
+            "the head office is closely following its progress."
+          ],
+          "correct_answer": "it will improve what the company is offering the customer."
+        },
+        {
+          "id": 2002,
+          "question": "Matteo is concerned about …",
+          "options": [
+            "communication in the team.",
+            "taking on work that they have little experience of.",
+            "not having time to work on the project."
+          ],
+          "correct_answer": "not having time to work on the project."
+        },
+        {
+          "id": 2003,
+          "question": "Akiko is the best person to do the customer survey questionnaire because ...",
+          "options": [
+            "she normally handles the company's marketing initiatives.",
+            "she has worked with John on similar tasks.",
+            "she has studied the subject."
+          ],
+          "correct_answer": "she has studied the subject."
+        },
+        {
+          "id": 2004,
+          "question": "Matteo initially asks for …",
+          "options": [
+            "paid overtime.",
+            "an assistant.",
+            "a reduction in his targets."
+          ],
+          "correct_answer": "a reduction in his targets."
+        },
+        {
+          "id": 2005,
+          "question": "John's immediate response to Barbara's offer to help Matteo is …",
+          "options": [
+            "enthusiastic.",
+            "not entirely positive.",
+            "a definite no."
+          ],
+          "correct_answer": "not entirely positive."
+        },
+        {
+          "id": 2006,
+          "question": "It's important that Matteo does the designs because …",
+          "options": [
+            "a client has asked specifically for him.",
+            "no one else knows how to do them.",
+            "he has the software to do them at home."
+          ],
+          "correct_answer": "no one else knows how to do them."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 103,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 3001,
+          "question": "The presenter and Helen differ on …",
+          "options": [
+            "how they see the characters in the book.",
+            "what they think about the quality of the writing.",
+            "how much they enjoyed reading the book."
+          ],
+          "correct_answer": "how much they enjoyed reading the book."
+        },
+        {
+          "id": 3002,
+          "question": "Helen enjoyed 'Her Mother's Daughter' because …",
+          "options": [
+            "it's totally different from the books she writes herself.",
+            "it's totally different from her own life.",
+            "it has a happy ending."
+          ],
+          "correct_answer": "it's totally different from her own life."
+        },
+        {
+          "id": 3003,
+          "question": "What is 'Her Mother's Daughter' about?",
+          "options": [
+            "The problems a mother has with her husband and children.",
+            "The way a mother's childhood affects her when she has children herself.",
+            "A child who does something shocking that her parents can't understand."
+          ],
+          "correct_answer": "The way a mother's childhood affects her when she has children herself."
+        },
+        {
+          "id": 3004,
+          "question": "Why are sad books about families popular, according to Anna?",
+          "options": [
+            "They make us feel as if our own families are better than the ones in books.",
+            "All families have similar problems, they're just less dramatic.",
+            "People have small families nowadays so they like reading about other families."
+          ],
+          "correct_answer": "All families have similar problems, they're just less dramatic."
+        },
+        {
+          "id": 3005,
+          "question": "What aspect of 'We Need to Talk About Kevin' will people be able to relate to?",
+          "options": [
+            "what it's like to bring up teenagers",
+            "how we feel when people we know are killed",
+            "how it feels to be a victim"
+          ],
+          "correct_answer": "what it's like to bring up teenagers"
+        },
+        {
+          "id": 3006,
+          "question": "What do the two books have in common?",
+          "options": [
+            "They're both about happy homes.",
+            "They're both about how parents affect their children.",
+            "They're both about how parents worry about their children."
+          ],
+          "correct_answer": "They're both about how parents affect their children."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 104,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 4001,
+          "question": "Charles thinks a surprise party is …",
+          "options": [
+            "a chance to relax.",
+            "too much of a shock.",
+            "a different way to celebrate."
+          ],
+          "correct_answer": "too much of a shock."
+        },
+        {
+          "id": 4002,
+          "question": "Marco and Dora agree that …",
+          "options": [
+            "a 40th birthday is more special than other birthdays.",
+            "ageing is a bad thing.",
+            "both of the above are true."
+          ],
+          "correct_answer": "a 40th birthday is more special than other birthdays."
+        },
+        {
+          "id": 4003,
+          "question": "Charles sees himself as someone who …",
+          "options": [
+            "prefers to be in the background.",
+            "likes to be the centre of attention.",
+            "organises nice things for other people."
+          ],
+          "correct_answer": "prefers to be in the background."
+        },
+        {
+          "id": 4004,
+          "question": "Describe Marco's feelings about his child's ninth birthday party.",
+          "options": [
+            "He's not looking forward to it.",
+            "He's looking forward to it.",
+            "It's a sensitive topic for him."
+          ],
+          "correct_answer": "He's not looking forward to it."
+        },
+        {
+          "id": 4005,
+          "question": "Why can't he organise a trip to the cinema for the ninth birthday party?",
+          "options": [
+            "Children prefer to go rock-climbing.",
+            "Another child has had a cinema party recently.",
+            "It's not a good idea to repeat parties from the year before."
+          ],
+          "correct_answer": "It's not a good idea to repeat parties from the year before."
+        },
+        {
+          "id": 4006,
+          "question": "Charles stopped celebrating birthdays because …",
+          "options": [
+            "he thinks they're not suitable for adults.",
+            "it became hard to find people to celebrate with.",
+            "it's less fun when you can't play kids' games."
+          ],
+          "correct_answer": "it became hard to find people to celebrate with."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 105,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 5001,
+          "question": "If Dave was abroad and saw a phone call from someone at home, he ...",
+          "options": [
+            "wouldn't answer it.",
+            "would be worried something had happened.",
+            "would think it was a work call."
+          ],
+          "correct_answer": "wouldn't answer it."
+        },
+        {
+          "id": 5002,
+          "question": "When he first arrived in Toronto, Dave was a bit worried about ...",
+          "options": [
+            "contacting his uncle.",
+            "his accommodation.",
+            "being mugged."
+          ],
+          "correct_answer": "his accommodation."
+        },
+        {
+          "id": 5003,
+          "question": "Jean's friend had a problem in her holiday flat, because ...",
+          "options": [
+            "it didn't look like what was advertised.",
+            "the air conditioning didn't work.",
+            "the neighbours were really noisy."
+          ],
+          "correct_answer": "it didn't look like what was advertised."
+        },
+        {
+          "id": 5004,
+          "question": "Dave's apartment was ...",
+          "options": [
+            "small but modern, with spectacular views.",
+            "comfortable and with a roof garden with spectacular views.",
+            "big, light and with spectacular views."
+          ],
+          "correct_answer": "big, light and with spectacular views."
+        },
+        {
+          "id": 5005,
+          "question": "He particularly enjoyed the ...",
+          "options": [
+            "green spaces.",
+            "shopping.",
+            "meeting of different cultures."
+          ],
+          "correct_answer": "meeting of different cultures."
+        },
+        {
+          "id": 5006,
+          "question": "Dave thought the PATH was particularly good ...",
+          "options": [
+            "as a shortcut when walking around the city.",
+            "for tasting many different types of food all in one place.",
+            "for keeping warm."
+          ],
+          "correct_answer": "for keeping warm."
+        },
+        {
+          "id": 5007,
+          "question": "The temperature ...",
+          "options": [
+            "can feel much lower because of the humidity.",
+            "can feel much lower because of the wind.",
+            "was unusually low for that time of year."
+          ],
+          "correct_answer": "can feel much lower because of the wind."
+        },
+        {
+          "id": 5008,
+          "question": "Dave's uncle lives ...",
+          "options": [
+            "in the suburbs of the city.",
+            "in an area that was more beautiful before it was affected by development work.",
+            "in a small house next to a lake."
+          ],
+          "correct_answer": "in a small house next to a lake."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 106,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 6001,
+          "question": "How did Speaker A feel during the meeting?",
+          "options": [
+            "offended",
+            "disappointed",
+            "unsure about what to do"
+          ],
+          "correct_answer": "unsure about what to do"
+        },
+        {
+          "id": 6002,
+          "question": "How has Speaker A responded to this experience?",
+          "options": [
+            "He has decided to copy the other man's way of greeting people.",
+            "He has reflected on it and realised something.",
+            "He has researched different ways of greeting people."
+          ],
+          "correct_answer": "He has reflected on it and realised something."
+        },
+        {
+          "id": 6003,
+          "question": "How did Speaker B feel about the international project?",
+          "options": [
+            "It was an entirely negative experience.",
+            "It was exhausting, but there were positives too.",
+            "It was challenging, but there were positives too."
+          ],
+          "correct_answer": "It was challenging, but there were positives too."
+        },
+        {
+          "id": 6004,
+          "question": "How does Speaker B feel now about working on international projects?",
+          "options": [
+            "She would like to do it again in the future.",
+            "She wouldn't like to do it again.",
+            "She isn't sure whether it would be a positive or a negative experience."
+          ],
+          "correct_answer": "She would like to do it again in the future."
+        },
+        {
+          "id": 6005,
+          "question": "How did Speaker C feel during his difficult time at work?",
+          "options": [
+            "stressed",
+            "embarrassed",
+            "calm"
+          ],
+          "correct_answer": "stressed"
+        },
+        {
+          "id": 6006,
+          "question": "How does Speaker C feel now?",
+          "options": [
+            "still overloaded ",
+            "ready for a break",
+            "more in control"
+          ],
+          "correct_answer": "more in control"
+        },
+        {
+          "id": 6007,
+          "question": "What did Speaker D do when the flight was cancelled?",
+          "options": [
+            "She took time to consider her options.",
+            "She acted quickly.",
+            "She asked for someone's advice."
+          ],
+          "correct_answer": "She acted quickly."
+        },
+        {
+          "id": 6008,
+          "question": "How does Speaker D feel about what happened?",
+          "options": [
+            "fortunate",
+            "annoyed",
+            "furious"
+          ],
+          "correct_answer": "fortunate"
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    {
+      "topic_id": 201,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 1001,
+          "question": "The majority of climbers on Everest …",
+          "options": [
+            "need oxygen to finish their ascent.",
+            "are accompanied.",
+            "make slow progress to the top.",
+            "(all of the above)"
+          ],
+          "correct_answer": "(all of the above)"
+        },
+        {
+          "id": 1002,
+          "question": "Kilian Jornet is unlike most Everest climbers because …",
+          "options": [
+            "he is a professional climber.",
+            "he ascended faster.",
+            "he found the climb difficult.",
+            "(all of the above)"
+          ],
+          "correct_answer": "he ascended faster."
+        },
+        {
+          "id": 1003,
+          "question": "In his training now, Kilian …",
+          "options": [
+            "demands a lot of himself.",
+            "takes a lot of rest periods.",
+            "uses a coach.",
+            "(all of the above)"
+          ],
+          "correct_answer": "demands a lot of himself."
+        },
+        {
+          "id": 1004,
+          "question": "Kilian partly owes his incredible fitness to …",
+          "options": [
+            "the way he makes extra time for sleep.",
+            "his ability to recover from injury.",
+            "where he grew up.",
+            "(all of the above)"
+          ],
+          "correct_answer": "where he grew up."
+        },
+        {
+          "id": 1005,
+          "question": "His training includes …",
+          "options": [
+            "psychological preparation.",
+            "making sure he drinks enough water.",
+            "trying to reduce his recovery time.",
+            "(all of the above)"
+          ],
+          "correct_answer": "psychological preparation."
+        },
+        {
+          "id": 1006,
+          "question": "Kilian's books are …",
+          "options": [
+            "ia long list of races and awards.qq",
+            "discouraging to average people.",
+            "best for an expert audience.",
+            "another example of his impressive accomplishments."
+          ],
+          "correct_answer": "another example of his impressive accomplishments."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+    {
+      "topic_id": 202,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 2001,
+          "question": "Mass-produced bananas are …",
+          "options": [
+            "grown from seeds because it's efficient.",
+            "cloned because it's a fast and cheap way to grow them.",
+            "sweeter than other bananas.",
+            "exported to Central America."
+          ],
+          "correct_answer": "cloned because it's a fast and cheap way to grow them."
+        },
+        {
+          "id": 2002,
+          "question": "The spread of the TR-1 strain was …",
+          "options": [
+            "caused by lack of water.",
+            "speeded up by the flooding of banana fields.",
+            "slowed down by crop spraying.",
+            "helped by the movement of people and vehicles."
+          ],
+          "correct_answer": "helped by the movement of people and vehicles."
+        },
+        {
+          "id": 2003,
+          "question": "Which sentence is NOT true?",
+          "options": [
+            "The Cavendish replaced the Gros Michel.",
+            "The Cavendish bananas were easier to transport than the Gros Michel.",
+            "The Cavendish was resistant to the fungus.",
+            "The Cavendish stopped United Fruit from losing more money."
+          ],
+          "correct_answer": "The Cavendish bananas were easier to transport than the Gros Michel."
+        },
+        {
+          "id": 2004,
+          "question": "South East Asia's Cavendish exports fell in 2015 because …",
+          "options": [
+            "a new strain of the fungus has developed.",
+            "farmers can't afford new farming technology.",
+            "they had to quarantine their fruit.",
+            "they depended too much on other countries."
+          ],
+          "correct_answer": "a new strain of the fungus has developed."
+        },
+        {
+          "id": 2005,
+          "question": "Genetically modifying bananas may …",
+          "options": [
+            "mean farmers can grow the Gros Michel again.",
+            "cause farmers to repeat the mistakes of the past.",
+            "encourage farmers to try new growing methods.",
+            "only be a short-term solution."
+          ],
+          "correct_answer": "only be a short-term solution."
+        },
+        {
+          "id": 2006,
+          "question": "How would you describe the writer's opinion about the future of the Cavendish?",
+          "options": [
+            "Optimistic",
+            "Pessimistic",
+            "Cautious",
+            "Uninterested"
+          ],
+          "correct_answer": "Cautious"
+        }
+      ]
+    },
+
+
+
+
+    {
+      "topic_id": 203,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 3001,
+          "question": "The British trainee felt that the people who want to be addressed as 'Dr' must be …",
+          "options": [
+            "hard-working.",
+            "conceited and self-important.",
+            "doing a medical degree.",
+            "from Germany."
+          ],
+          "correct_answer": "conceited and self-important."
+        },
+        {
+          "id": 3002,
+          "question": "If you are not sure how to address someone, you should …",
+          "options": [
+            "use the title you see on their business card.",
+            "make your decision based on cultural stereotypes about their country.",
+            "address them the way you'd like to be addressed.",
+            "ask them what they would like you to call them."
+          ],
+          "correct_answer": "ask them what they would like you to call them."
+        },
+        {
+          "id": 3003,
+          "question": "There might be a misunderstanding if an American smiles at a Russian business associate because the Russian might think that the American is ...",
+          "options": [
+            "being fake.",
+            "challenging their authority.",
+            "trying to break the ice.",
+            "disrespectful."
+          ],
+          "correct_answer": "being fake."
+        },
+        {
+          "id": 3004,
+          "question": "The Japanese, South Koreans and Iranians might interpret a smiling face as being …",
+          "options": [
+            "friendlier.",
+            "less open.",
+            "not as intelligent.",
+            "dishonest."
+          ],
+          "correct_answer": "not as intelligent."
+        },
+        {
+          "id": 3005,
+          "question": "Americans and British people sometimes use eye contact to show that they ...",
+          "options": [
+            "like the speaker.",
+            "are really listening to what is being said.",
+            "are honest and truthful.",
+            "are attending to every need of the speaker."
+          ],
+          "correct_answer": "are really listening to what is being said."
+        },
+        {
+          "id": 3006,
+          "question": "The last paragraph warns the reader not to ...",
+          "options": [
+            "engage in international business.",
+            "let national cultures shape the way we behave and think.",
+            "let miscommunication damage our business relationships.",
+            "overgeneralise using our knowledge of cultural stereotypes."
+          ],
+          "correct_answer": "overgeneralise using our knowledge of cultural stereotypes."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+    {
+      "topic_id": 204,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 4001,
+          "question": "Which book talks about how we can continue to make things even better?",
+          "options": [
+            "Factfulness",
+            "Enlightenment Now",
+            "The Rational Optimist",
+            "The Great Surge"
+          ],
+          "correct_answer": "The Great Surge"
+        },
+        {
+          "id": 4002,
+          "question": "Which book covers a long period of human history?",
+          "options": [
+            "Factfulness",
+            "Enlightenment Now",
+            "The Rational Optimist",
+            "The Great Surge"
+          ],
+          "correct_answer": "The Rational Optimist"
+        },
+        {
+          "id": 4003,
+          "question": "Which book claims that human intuition negatively affects the way people think about the world?",
+          "options": [
+            "Factfulness",
+            "Enlightenment Now",
+            "The Rational Optimist",
+            "The Great Surge"
+          ],
+          "correct_answer": "Factfulness"
+        },
+        {
+          "id": 4004,
+          "question": "Which book says that current establishments are under threat from politics?",
+          "options": [
+            "Factfulness",
+            "Enlightenment Now",
+            "The Rational Optimist",
+            "The Great Surge"
+          ],
+          "correct_answer": "Enlightenment Now"
+        },
+        {
+          "id": 4005,
+          "question": "Which book explains that we tend to mentally divide humans into two clear groups?",
+          "options": [
+            "Factfulness",
+            "Enlightenment Now",
+            "The Rational Optimist",
+            "The Great Surge"
+          ],
+          "correct_answer": "Factfulness"
+        },
+        {
+          "id": 4006,
+          "question": "Which book claims that trade has helped make life better around the world?",
+          "options": [
+            "Factfulness",
+            "Enlightenment Now",
+            "The Rational Optimist",
+            "The Great Surge"
+          ],
+          "correct_answer": "The Rational Optimist"
+        },
+        {
+          "id": 4007,
+          "question": "Which book makes the claim that unfair distribution of wealth does not affect happiness as much as people think?",
+          "options": [
+            "Factfulness",
+            "Enlightenment Now",
+            "The Rational Optimist",
+            "The Great Surge"
+          ],
+          "correct_answer": "Enlightenment Now"
+        },
+        {
+          "id": 4008,
+          "question": "Which book focuses primarily on developing countries?",
+          "options": [
+            "Factfulness",
+            "Enlightenment Now",
+            "The Rational Optimist",
+            "The Great Surge"
+          ],
+          "correct_answer": "The Great Surge"
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+    
+    {
+      "topic_id": 205,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 5001,
+          "question": "What does the 'feedback sandwich' involve?",
+          "options": [
+            "Giving positive feedback by accompanying it with negative feedback",
+            "Giving negative feedback by accompanying it with positive feedback",
+            "Creating a feedback culture in an organisation",
+            "Devaluing positive feedback"
+          ],
+          "correct_answer": "Giving negative feedback by accompanying it with positive feedback"
+        },
+        {
+          "id": 5002,
+          "question": "The writer believes that the 'feedback sandwich' …",
+          "options": [
+            "can encourage good performance.",
+            "makes negative feedback more painful.",
+            "makes employees fearful of feedback.",
+            "is too predictable to be effective."
+          ],
+          "correct_answer": "is too predictable to be effective."
+        },
+        {
+          "id": 5003,
+          "question": "The 'growth mindset' idea is that ...",
+          "options": [
+            "we can become good at things that we might initially not seem to have a talent for.",
+            "we should focus on honing the talents that we are born with.",
+            "the end result is more important than the process.",
+            "we must not tell people that they are good at certain things."
+          ],
+          "correct_answer": "we can become good at things that we might initially not seem to have a talent for."
+        },
+        {
+          "id": 5004,
+          "question": "How can we create a culture of positive feedback?",
+          "options": [
+            "By offering feedback only during informal occasions such as when walking down a corridor",
+            "By making sure that only positive and not negative feedback is given",
+            "By asking your employees to offer positive feedback to their colleagues",
+            "By not conducting appraisals for employees"
+          ],
+          "correct_answer": "By asking your employees to offer positive feedback to their colleagues"
+        },
+        {
+          "id": 5005,
+          "question": "A cynical view of positive feedback …",
+          "options": [
+            "is irreversible.",
+            "can make the quality of working life richer.",
+            "can be healthy.",
+            "can be changed gradually."
+          ],
+          "correct_answer": "can be changed gradually."
+        },
+        {
+          "id": 5006,
+          "question": "What might be a good title for this article?",
+          "options": [
+            "The power of a growth mindset",
+            "The power of positive feedback",
+            "The power of positive thinking",
+            "The power of the feedback sandwich"
+          ],
+          "correct_answer": "The power of positive feedback"
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 208,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id":8001 ,
+          "question": "The study in the journal 'Science' was written by NASA scientists.",
+          "options": [
+            "True",
+            "False",
+            "Not given"
+          ],
+          "correct_answer": "Not given"
+        },
+        {
+          "id": 8002,
+          "question": "This is not the first study to suggest that life existed on Mars in the past.",
+          "options": [
+            "True",
+            "False",
+            "Not given"
+          ],
+          "correct_answer": "True"
+        },
+        {
+          "id":8003 ,
+          "question": "A scientific vehicle found very small elements of an organic molecule within water extracted from the planet.",
+          "options": [
+            "True",
+            "False",
+            "Not given"
+          ],
+          "correct_answer": "False"
+        },
+        {
+          "id":8004 ,
+          "question": "It is believed that this conclusively proves that there was once life on the planet.",
+          "options": [
+            "True",
+            "False",
+            "Not given"
+          ],
+          "correct_answer": "False"
+        },
+        {
+          "id": 8005,
+          "question": "Methane is a natural molecule that is a sign of life.",
+          "options": [
+            "True",
+            "False",
+            "Not given"
+          ],
+          "correct_answer": "True"
+        },
+        {
+          "id":8006 ,
+          "question": "All organic molecules have a limited lifespan.",
+          "options": [
+            "True",
+            "False",
+            "Not given"
+          ],
+          "correct_answer": "Not given"
+        },
+        {
+          "id":8007 ,
+          "question": "Mars can be said to have a winter and a summer.",
+          "options": [
+            "True",
+            "False",
+            "Not given"
+          ],
+          "correct_answer": "True"
+        },
+        {
+          "id":8008 ,
+          "question": "There are at least two more scientific expeditions heading to Mars.",
+          "options": [
+            "True",
+            "False",
+            "Not given"
+          ],
+          "correct_answer": "True"
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 209,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 9001,
+          "question": "Why is Jo writing to Karl?",
+          "options": [
+            "To suggest that his management style is not suitable for the current members of his team",
+            "To let him know about the issues his team member is facing and help him manage them",
+            "To tell him how to solve his problems",
+            "To ask him to take it easy on Judy and not give her too much work"
+          ],
+          "correct_answer": "To let him know about the issues his team member is facing and help him manage them"
+        },
+        {
+          "id": 9002,
+          "question": "What is Judy not used to?",
+          "options": [
+            "Being told what to do",
+            "Collaborating with people internationally",
+            "Collaborating with people internationally",
+            "Delegating work to other people"
+          ],
+          "correct_answer": "Collaborating with people internationally"
+        },
+        {
+          "id":9003 ,
+          "question": "Why is Judy confused by the changing targets?",
+          "options": [
+            "She feels as if she needs to understand the reasons for the changes.",
+            "She has simultaneous deadlines from the Tokyo office.",
+            "She doesn't want to know the bigger picture, just her part.",
+            "She doesn't like meeting deadlines."
+          ],
+          "correct_answer": "She feels as if she needs to understand the reasons for the changes."
+        },
+        {
+          "id": 9004,
+          "question": "Who might benefit from having a better overview of the project and a better understanding of how the individual tasks fit together to achieve the group target?",
+          "options": [
+            "Only Judy",
+            "Judy and the Tokyo office",
+            "Judy and Karl",
+            "Judy and the rest of Karl's team"
+          ],
+          "correct_answer": "Judy and the rest of Karl's team"
+        },
+        {
+          "id": 9005,
+          "question": "What does Jo think of Judy?",
+          "options": [
+            "Judy works well independently but isn't a good team player.",
+            "Judy is lazy and prefers managers to tell her exactly what to do.",
+            "Judy is very hard-working and capable and will go far in the company.",
+            "Judy is very enthusiastic but not very experienced."
+          ],
+          "correct_answer": "Judy is very hard-working and capable and will go far in the company."
+        },
+        {
+          "id": 9006,
+          "question": "Which of these does Jo do in her email?",
+          "options": [
+            "Mix positives in with the negatives",
+            "Focus on the solutions",
+            "Use language to show that she's expressing her own opinion or a possibility and not hard facts",
+            "All of the above"
+          ],
+          "correct_answer": "All of the above"
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 210,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 10001,
+          "question": "Which manifesto talks about higher education?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_answer": "C"
+        },
+        {
+          "id": 10002,
+          "question": "Which manifesto talks about transportation?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "id": 10003,
+          "question": "Which manifesto talks about healthcare?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_answer": "B"
+        },
+        {
+          "id": 10004,
+          "question": "Which manifestos talk about better communication with citizens?",
+          "options": [
+            "A and B",
+            "A and D",
+            "B and C",
+            "C and D"
+          ],
+          "correct_answer": "A and D"
+        },
+        {
+          "id":10005 ,
+          "question": "Which manifestos talk about deregulation?",
+          "options": [
+            "A and C",
+            "B and C",
+            "B and D",
+            "C and D"
+          ],
+          "correct_answer": "B and D"
+        },
+        {
+          "id":10006 ,
+          "question": "Which manifestos talk about better conditions for workers?",
+          "options": [
+            "A and B",
+            "A and C",
+            "B and C",
+            "B and D"
+          ],
+          "correct_answer": "B and C"
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 212,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id":20001 ,
+          "question": "What does the word 'apparently' in the first paragraph tell us about the rise in violence we see in the news?",
+          "options": [
+            "The rise is obviously true.",
+            "The rise seems true but evidence might show it isn't.",
+            "The rise seems false but evidence might show it's true."
+          ],
+          "correct_answer": "The rise seems true but evidence might show it isn't."
+        },
+        {
+          "id":20002 ,
+          "question": "Which statement about population levels is correct?",
+          "options": [
+            "About two hundred years ago, the child mortality rate started to drop significantly.",
+            "The rate is growing steadily now.",
+            "The rate will start to drop in the year 2100."
+          ],
+          "correct_answer": "About two hundred years ago, the child mortality rate started to drop significantly."
+        },
+        {
+          "id":20003 ,
+          "question": "Which factor does NOT cause the birth rate to fall?",
+          "options": [
+            "Improvements in healthcareiqq",
+            "The availability of contraception",
+            "Poverty"
+          ],
+          "correct_answer": "Poverty"
+        },
+        {
+          "id":20004,
+          "question": "One of the UN's targets for 2030 is to ...",
+          "options": [
+            "end poverty.",
+            "increase life expectancy.",
+            "make population levels stable."
+          ],
+          "correct_answer": "end poverty."
+        },
+        {
+          "id": 20005,
+          "question": "People are more likely to be killed …",
+          "options": [
+            "by soldiers.",
+            "by politicians.",
+            "by criminals."
+          ],
+          "correct_answer": "by criminals."
+        },
+        {
+          "id":20006 ,
+          "question": "There is reason to be optimistic because …",
+          "options": [
+            "you might win the lottery.",
+            "there are some positives despite what the newspapers report.",
+            "we're making progress with environmental problems."
+          ],
+          "correct_answer": "there are some positives despite what the newspapers report."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 304,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id":4001 ,
+          "question": "Choose the best option.",
+          "options": [
+            "I heard you were not happy with the service you received.",
+            "It has been brought to my attention that you were dissatisfied with the service you received."
+          ],
+          "correct_answer": "It has been brought to my attention that you were dissatisfied with the service you received."
+        },
+        {
+          "id":4002 ,
+          "question": "Choose the best option.",
+          "options": [
+            "We value your custom.",
+            "We're really pleased you shop with us."
+          ],
+          "correct_answer": "We value your custom."
+        },
+        {
+          "id":4003 ,
+          "question": "Choose the best option.",
+          "options": [
+            "I promise you that we take a lot of notice of our customers.",
+            "I assure you that we take all customer feedback seriously."
+          ],
+          "correct_answer": "I assure you that we take all customer feedback seriously."
+        },
+        {
+          "id":4004 ,
+          "question": "Choose the best option.",
+          "options": [
+            "I would like to apologise on behalf of the company for any inconvenience caused.",
+            "My colleagues and I are really sorry you had such a nightmare."
+          ],
+          "correct_answer": "I would like to apologise on behalf of the company for any inconvenience caused."
+        },
+        {
+          "id": 4005,
+          "question": "Choose the best option.",
+          "options": [
+            "We have taken your suggestions on board and will review this process for the future.",
+            "We like your ideas and we might use them in future to improve this process."
+          ],
+          "correct_answer": "We have taken your suggestions on board and will review this process for the future."
+        },
+        {
+          "id":4006 ,
+          "question": "Choose the best option.",
+          "options": [
+            "We are happy to refund you the difference in price.",
+            "We accept that we will have to refund you the difference in price."
+          ],
+          "correct_answer": "We are happy to refund you the difference in price."
+        },
+        {
+          "id":4007 ,
+          "question": "Choose the best option.",
+          "options": [
+            "We hope this is all OK for you now.",
+            "We trust that you will find this a satisfactory response."
+          ],
+          "correct_answer": "We trust that you will find this a satisfactory response."
+        },
+        {
+          "id":4008 ,
+          "question": "Choose the best option.",
+          "options": [
+            "Should you wish to discuss this matter further, please let us know how best to contact you.",
+            "Don't be shy! Call or email me if there's anything else you need."
+          ],
+          "correct_answer": "Should you wish to discuss this matter further, please let us know how best to contact you."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 306,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id": 6001,
+          "question": "Which sentence is appropriate for a formal letter?",
+          "options": [
+            "Unfortunately, due to unforeseen circumstances regarding my accommodation I have had to return to my own country.",
+            "Unfortunately, my mother and I have argued and I have had to move out of her house. I'm staying with friends but don't feel comfortable staying too long so I have had to return to my own country."              
+          ],
+          "correct_answer": "Unfortunately, due to unforeseen circumstances regarding my accommodation I have had to return to my own country."
+        },
+        {
+          "id":6002 ,
+          "question": "Which sentence is appropriate for a formal letter?",
+          "options": [
+            "I might be able to come back in September or March. It depends on my visa request, so who knows?",
+            "At present it is not clear when I will be able to return."
+          ],
+          "correct_answer": "At present it is not clear when I will be able to return."
+        },
+        {
+          "id":6003 ,
+          "question": "Which sentence is appropriate for a formal letter?",
+          "options": [
+            "I am afraid I will not be able to attend.",
+            "I don't feel like attending."
+          ],
+          "correct_answer": "I am afraid I will not be able to attend."
+        },
+        {
+          "id":6004 ,
+          "question": "Which sentence is appropriate for a formal letter?",
+          "options": [
+            "I am expecting a full refund.",
+            "I'm hoping that you will consider issuing a refund."
+          ],
+          "correct_answer": "I'm hoping that you will consider issuing a refund."
+        },
+        {
+          "id": 6005,
+          "question": "Which sentence is appropriate for a formal letter?",
+          "options": [
+            "I would be grateful if I could start the course at a later date.",
+            "I want to start the course at a later date."
+          ],
+          "correct_answer": "I would be grateful if I could start the course at a later date."
+        },
+        {
+          "id": 6006,
+          "question": "Which sentence is appropriate for a formal letter?",
+          "options": [
+            "I apologise for any inconvenience caused and hope the situation will be resolved as soon as possible.",
+            "I apologise for any inconvenience caused and I look forward to your immediate reply on the matter."
+          ],
+          "correct_answer": "I apologise for any inconvenience caused and hope the situation will be resolved as soon as possible."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 405,
+      "description": "Choose the correct answers.",
+      "questions": [
+        {
+          "id":5001,
+          "question": "Noelia wants Paul to DJ at a party for",
+          "options": [
+            "her friends.",
+            "the people they work with.",
+            "their customers."
+          ],
+          "correct_answer": "the people they work with."
+        },
+        {
+          "id": 5002,
+          "question": "Noelia says Paul would",
+          "options": [
+            "be good at it.",
+            "enjoy it.",
+            "learn something new from it."
+          ],
+          "correct_answer": "be good at it."
+        },
+        {
+          "id": 5003,
+          "question": "Paul thinks his music taste is",
+          "options": [
+            "excellent.",
+            "out of date.",
+            "weird."
+          ],
+          "correct_answer": "weird."
+        },
+        {
+          "id": 5004,
+          "question": "Noelia says their colleagues will dance to",
+          "options": [
+            "any pop music.",
+            "any type of music.",
+            "anything from the 90s."
+          ],
+          "correct_answer": "any type of music."
+        },
+        {
+          "id": 5005,
+          "question": "Paul is worried about",
+          "options": [
+            "his DJ equipment.",
+            "missing the party while he's DJing.",
+            "what people will think of him."
+          ],
+          "correct_answer": "what people will think of him."
+        },
+        {
+          "id":5006,
+          "question": "In the end, Paul says",
+          "options": [
+            "yes.",
+            "no.",
+            "maybe."
+          ],
+          "correct_answer": "maybe."
+        }
+      ]
+    } 
+
+  ]
+}

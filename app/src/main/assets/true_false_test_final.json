@@ -1,0 +1,854 @@
+{
+  "true_false_tests": [
+    {
+      "topic_id": 107,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "This podcast focuses on some of the downsides of innovation.",
+          "correct_answer": false
+        },
+        {
+          "id": 2,
+          "question": "If they do not innovate, businesses will not survive.",
+          "correct_answer": true
+        },
+        {
+          "id": 3,
+          "question": "There are three main types of innovation.",
+          "correct_answer": false
+        },
+        {
+          "id": 4,
+          "question": "TIncremental innovation involves a series of small changes.he",
+          "correct_answer": true
+        },
+        {
+          "id": 5,
+          "question": "Disruptive innovation involves introducing a change that has an impact on the existing market.",
+          "correct_answer": true
+        },
+        {
+          "id": 6,
+          "question": "Architectural innovation relates to the complete restructuring of the market.",
+          "correct_answer": false
+        },
+        {
+          "id": 7,
+          "question": "Dyson's move from vacuum cleaners to hairdryers is an example of radical innovation.",
+          "correct_answer": false
+        },
+        {
+          "id": 8,
+          "question": "Radical innovation can lead to the death of existing markets.",
+          "correct_answer": true
+        },
+        {
+          "id": 9,
+          "question": "The speaker suggests that you test your idea before you try to get support for it.",
+          "correct_answer": false
+        },
+        {
+          "id": 10,
+          "question": "The evaluation stage is when you think about exactly how to implement your ideas.",
+          "correct_answer": false
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 108,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": " We usually underestimate introverts when we think of great leaders.",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": "Introverts only become leaders because something external makes them feel they should.",
+          "correct_answer": true
+        },
+        {
+          "id": 3,
+          "question": "Thinking of good ideas is easier when you're not interacting with other people.",
+          "correct_answer": true
+        },
+        {
+          "id": 4,
+          "question": "Creative subjects at school are best taught using group projects.",
+          "correct_answer": false
+        },
+        {
+          "id": 5,
+          "question": "Introverts need to be more like extroverts if they want to get good grades.",
+          "correct_answer": false
+        },
+        {
+          "id": 6,
+          "question": "Open plan offices are designed for extroverts. ",
+          "correct_answer": true
+        },
+        {
+          "id": 7,
+          "question": "We should encourage all children to work alone sometimes.",
+          "correct_answer": true
+        },
+        {
+          "id": 8,
+          "question": "We should encourage extroverts to work like introverts and vice versa.",
+          "correct_answer": false
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 110,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Millennials spend more time on smartphones than any other generation.",
+          "correct_answer": false
+        },
+        {
+          "id": 2,
+          "question": "Some people who work in the tech industry are fighting against smartphone addiction.",
+          "correct_answer": true
+        },
+        {
+          "id": 3,
+          "question": "The presenter thinks most adults' behaviour towards their phones and apps is under control.",
+          "correct_answer": false
+        },
+        {
+          "id": 4,
+          "question": "Babies' brain development is delayed because they're looking at screens.",
+          "correct_answer": false
+        },
+        {
+          "id": 5,
+          "question": "We're likely to see a rise in teenage mental health problems because of social media addiction.",
+          "correct_answer": true
+        },
+        {
+          "id": 6,
+          "question": "Changing the colour settings on your phone may make you spend less time on it.",
+          "correct_answer": true
+        }
+      ]
+    },
+
+
+
+    
+
+
+
+
+
+    {
+      "topic_id": 111,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "The speaker starts the talk with two examples of helices found in nature.",
+          "correct_answer": false
+        },
+        {
+          "id": 2,
+          "question": "A helix is a three-dimensional object.",
+          "correct_answer": true
+        },
+        {
+          "id": 3,
+          "question": "The main advantage of a spiral staircase is its strength.",
+          "correct_answer": false
+        },
+        {
+          "id": 4,
+          "question": "DNA contains the genetic information for most, but not all, living things.",
+          "correct_answer": false
+        },
+        {
+          "id": 5,
+          "question": "A mirror image of a helix can appear to change direction.",
+          "correct_answer": true
+        },
+        {
+          "id": 6,
+          "question": "The screw is an example of a conical helix.",
+          "correct_answer": true
+        },
+        {
+          "id": 7,
+          "question": "Helices are much more common in manufactured objects than in natural objects.",
+          "correct_answer": false
+        },
+        {
+          "id": 8,
+          "question": "It is a mystery why there are so many helices in the world.",
+          "correct_answer": false
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 207,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Hu Experts fully understand how the Hindi language developed.man",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": "The grammar of dolphin language follows the same rules as human language.",
+          "correct_answer": false
+        },
+        {
+          "id": 3,
+          "question": "Brain size is not the only factor in determining language capability.",
+          "correct_answer": true
+        },
+        {
+          "id": 4,
+          "question": "The language of very young children has something in common with the way our prehistoric ancestors may have spoken.",
+          "correct_answer": true
+        },
+        {
+          "id": 5,
+          "question": "When people started using complex language, their brains got bigger.",
+          "correct_answer": false
+        },
+        {
+          "id": 6,
+          "question": "The role of genetics in language capacity is not yet clear.",
+          "correct_answer": true
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 211,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "More and more people want supermarkets to reduce the amount of plastic waste they produce.",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": "By 2025, many of the major supermarkets will have stopped using plastic in their in-house products.",
+          "correct_answer": false
+        },
+        {
+          "id": 3,
+          "question": "Supermarkets are still denying that plastic packaging can cause damage to our environment.",
+          "correct_answer": false
+        },
+        {
+          "id": 4,
+          "question": "Supermarkets are not telling people how much food they are actually wasting.",
+          "correct_answer": true
+        },
+        {
+          "id": 5,
+          "question": "There is a grocer in Berlin that doesn't allow customers to use their own containers.",
+          "correct_answer": false
+        },
+        {
+          "id": 6,
+          "question": "Farmdrop doesn't store large amounts of food and so doesn't produce unnecessary waste.",
+          "correct_answer": true
+        },
+        {
+          "id": 7,
+          "question": "Farmers supplying food to Farmdrop get a small fraction of the price that customers pay.",
+          "correct_answer": false
+        },
+        {
+          "id": 8,
+          "question": "The author believes that small shops like Bulk Market and Farmdrop will eventually take over the major supermarkets.",
+          "correct_answer": false
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 302,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "You should say what the aim of the proposal is in the introduction.",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": "Subheadings should make it easy for the reader to follow the proposal.",
+          "correct_answer": true
+        },
+        {
+          "id": 3,
+          "question": "It is better not to mention the drawbacks of your proposed solution.",
+          "correct_answer": false
+        },
+        {
+          "id": 4,
+          "question": "A proposal should be written in a persuasive and personal style.",
+          "correct_answer": false
+        },
+        {
+          "id": 5,
+          "question": "The passive is a useful structure for writing a proposal.",
+          "correct_answer": true
+        },
+        {
+          "id": 6,
+          "question": "Your proposal should make clear what you are recommending and why.",
+          "correct_answer": true
+        }
+      ]
+    },
+
+
+
+
+
+
+    {
+      "topic_id": 303,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Every month, 12 per cent of Girox employees quit.",
+          "correct_answer": false
+        },
+        {
+          "id": 2,
+          "question": "The study was conducted using three methods: questionnaires, focus groups and individual interviews.",
+          "correct_answer": false
+        },
+        {
+          "id": 3,
+          "question": "The main reason employees quit is that they feel that their work goes unrecognised.",
+          "correct_answer": true
+        },
+        {
+          "id": 4,
+          "question": "The study found that the more employees were paid, the more engaged they were.",
+          "correct_answer": false
+        },
+        {
+          "id": 5,
+          "question": "Girox needs to adopt a stricter and more rigid management style.",
+          "correct_answer": false
+        },
+        {
+          "id": 6,
+          "question": "To improve engagement, Girox should provide employees with options for more flexible working, make them feel appreciated for the work they do and offer more training.",
+          "correct_answer": true
+        }
+      ]
+    },
+
+
+
+
+
+
+    {
+      "topic_id": 305,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "There were both problems with the ordering system and between people in the team.",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": " A lot has changed in the system and some menu items are missing.",
+          "correct_answer": false
+        },
+        {
+          "id": 3,
+          "question": "People worked overtime and now they're tired.",
+          "correct_answer": true
+        },
+        {
+          "id": 4,
+          "question": "Johann felt very annoyed.",
+          "correct_answer": true
+        },
+        {
+          "id": 5,
+          "question": "Sanjit needed help to repair the relationship between Johann and Maria.",
+          "correct_answer": false
+        },
+        {
+          "id": 6,
+          "question": "Someone from the IT team is going to train them in how to use lights in the system.",
+          "correct_answer": false
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 307,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "The writer and the recipient have not seen each other for quite some time.",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": "The writer has been busy recently.",
+          "correct_answer": true
+        },
+        {
+          "id": 3,
+          "question": "Carol is someone they both know.",
+          "correct_answer": true
+        },
+        {
+          "id": 4,
+          "question": "The writer enjoys their job.",
+          "correct_answer": false
+        },
+        {
+          "id": 5,
+          "question": " The writer is not in a new relationship.",
+          "correct_answer": true
+        },
+        {
+          "id": 6,
+          "question": "The writer suggests a concrete plan for meeting the recipient.",
+          "correct_answer": false
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 308,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "The writer answers both parts of the question.",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": "The introduction should explain the question and how the writer is going to answer it.",
+          "correct_answer": true
+        },
+        {
+          "id": 3,
+          "question": "A topic sentence summarises the main idea of the essay.",
+          "correct_answer": false
+        },
+        {
+          "id": 4,
+          "question": "It is better to have many different ideas about the topic than write in more depth about one or two ideas.",
+          "correct_answer": false
+        },
+        {
+          "id": 5,
+          "question": "The linking words 'Coupled with', 'In addition' and 'Furthermore' are all for adding ideas.",
+          "correct_answer": true
+        },
+        {
+          "id": 6,
+          "question": "Repeating the word 'girls' many times is unavoidable with this essay question.",
+          "correct_answer": false
+        },
+        {
+          "id": 7,
+          "question": "It is a good idea to save your main idea until the conclusion.",
+          "correct_answer": false
+        },
+        {
+          "id": 8,
+          "question": "'Given these points' and 'All things considered' are good expressions to introduce the conclusion.",
+          "correct_answer": true
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 309,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "The first paragraph should explain the question in your own words.",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": "You shouldn't give your opinion until the conclusion.",
+          "correct_answer": false
+        },
+        {
+          "id": 3,
+          "question": "You must always give both sides of the argument.",
+          "correct_answer": false
+        },
+        {
+          "id": 4,
+          "question": "Structures like 'One justification for …' and 'The first thing to consider is …' link ideas together, and help the reader follow your argument.",
+          "correct_answer": true  
+        },
+        {
+          "id": 5,
+          "question": "Modal verbs (e.g. 'may' in 'Prison may not be an effective punishment') make sentences sound more certain.",
+          "correct_answer": false
+        },
+        {
+          "id": 6,
+          "question": "If you think of an extra idea, mention it in the conclusion.",
+          "correct_answer": false
+        }
+      ]
+    },
+
+
+
+
+
+
+    {
+      "topic_id": 310,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "You should make sure people know who you are by writing your full name at the beginning.",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": "You should write about yourself in the first person, using 'I'.",
+          "correct_answer": false
+        },
+        {
+          "id": 3,
+          "question": "It's important to include all the impressive things you have done.",
+          "correct_answer": false
+        },
+        {
+          "id": 4,
+          "question": "You should tailor your bio to your audience.",
+          "correct_answer": true
+        },
+        {
+          "id": 5,
+          "question": "You can share personal information to make it more engaging.",
+          "correct_answer": true
+        },
+        {
+          "id": 6,
+          "question": "If your bio is online you can include links.",
+          "correct_answer": true
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 311,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "RPA technology has not been developed yet.",
+          "correct_answer": false
+        },
+        {
+          "id": 2,
+          "question": "Some people fear that RPA will lead to unemployment.",
+          "correct_answer": true
+        },
+        {
+          "id": 3,
+          "question": "The article argues that RPA will change the nature of the work that workers do.",
+          "correct_answer": true
+        },
+        {
+          "id": 4,
+          "question": "Workers of the future will need to be equally competent at both basic clerical duties and higher-level problem-solving and critical thinking.",
+          "correct_answer": false
+        },
+        {
+          "id": 5,
+          "question": "Flexibility is another skill that will be in demand.",
+          "correct_answer": true
+        },
+        {
+          "id": 6,
+          "question": "If workers can develop these skills, companies won't need to implement RPA in the future.",
+          "correct_answer": false
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 401,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Vanya is very excited about her new idea.",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": "She wants to add a few cat videos to their social media account.",
+          "correct_answer": false
+        },
+        {
+          "id": 3,
+          "question": "Paul loves the idea.",
+          "correct_answer": false
+        },
+        {
+          "id": 4,
+          "question": "Emir isn't sure about the idea at first.",
+          "correct_answer": true
+        },
+        {
+          "id": 5,
+          "question": "Vanya believes that sharing cat videos will increase their number of social media followers.",
+          "correct_answer": true
+        },
+        {
+          "id": 6,
+          "question": "Emir wants to know more details about Vanya's plan.",
+          "correct_answer": true
+        },
+        {
+          "id": 7,
+          "question": "Vanya already knows who's going to find the cat videos.",
+          "correct_answer": false
+        },
+        {
+          "id": 8,
+          "question": "In the end, Emir thinks they should try a different idea.",
+          "correct_answer": false
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 403,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Noelia thinks it would be a good idea to have a trampoline in the office.",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": "Yuna has her best ideas when she's at her desk.",
+          "correct_answer": false
+        },
+        {
+          "id": 3,
+          "question": "Noelia has never been on a trampoline.",
+          "correct_answer": false
+        },
+        {
+          "id": 4,
+          "question": "Yuna is worried about what the clients would think of the trampoline.",
+          "correct_answer": true
+        },
+        {
+          "id": 5,
+          "question": "Noelia thinks that trampolining is good for your health.",
+          "correct_answer": true
+        },
+        {
+          "id": 6,
+          "question": " Yuna says yes to Noelia's idea.",
+          "correct_answer": false
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "topic_id": 404,
+      "test_id": 1,
+      "title": "Are the sentences true or false?",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Noelia is stressed because a client keeps emailing her about unimportant things.",
+          "correct_answer": true
+        },
+        {
+          "id": 2,
+          "question": "Noelia thinks she should ask the client to stop sending emails.",
+          "correct_answer": false
+        },
+        {
+          "id": 3,
+          "question": "Noelia likes Bob's suggestion at first.",
+          "correct_answer": false
+        },
+        {
+          "id": 4,
+          "question": "Bob had a similar problem in a previous job.",
+          "correct_answer": true
+        },
+        {
+          "id": 5,
+          "question": "Bob suggests that the scar on his neck is from a snake bite.",
+          "correct_answer": true
+        },
+        {
+          "id": 6,
+          "question": "Noelia follows Bob's advice and it works.",
+          "correct_answer": true
+        }
+      ]
+    }
+
+
+  ]
+}

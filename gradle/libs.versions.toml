@@ -16,6 +16,7 @@ navVersion = "2.7.7"
 kirich = "1.5.9"
 daggerHiltVersion = "2.51.1"
 dotsIndicator = "4.3"
+gson = "2.10.1"
 
 [libraries]
 androidx-room = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
@@ -35,6 +36,7 @@ androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navi
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navVersion" }
 viewbinding-kirich = { group = "com.github.kirich1409", name = "viewbindingpropertydelegate-noreflection", version.ref = "kirich" }
 dots-indicator = { group = "com.tbuonomo", name = "dotsindicator", version.ref = "dotsIndicator"}
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
