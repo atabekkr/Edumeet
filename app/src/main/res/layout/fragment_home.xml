@@ -198,7 +198,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_speaking"
+        android:id="@+id/card_writing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/normal_150"
@@ -225,7 +225,7 @@
                     android:layout_marginTop="@dimen/normal_100"
                     android:fontFamily="@font/font_bold"
                     android:gravity="center_horizontal"
-                    android:text="@string/speaking"
+                    android:text="@string/writing"
                     android:textColor="@color/typography_3"
                     android:textSize="@dimen/medium_size_text"
                     app:layout_constraintBottom_toBottomOf="@id/btn_back"
@@ -278,7 +278,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_writing"
+        android:id="@+id/card_speaking"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/normal_150"
@@ -305,7 +305,7 @@
                     android:layout_marginTop="@dimen/normal_100"
                     android:fontFamily="@font/font_bold"
                     android:gravity="center_horizontal"
-                    android:text="@string/writing"
+                    android:text="@string/speaking"
                     android:textColor="@color/typography_3"
                     android:textSize="@dimen/medium_size_text"
                     app:layout_constraintBottom_toBottomOf="@id/btn_back"

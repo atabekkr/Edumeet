@@ -71,4 +71,7 @@ dependencies {
     implementation(libs.gson)
 
     implementation(libs.dots.indicator)
+
+    //Youtube video player
+    implementation(libs.youtube.player)
 }

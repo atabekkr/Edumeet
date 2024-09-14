@@ -4,7 +4,6 @@ import android.media.MediaPlayer
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
-import android.text.Html
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.SeekBar
@@ -18,9 +17,12 @@ import com.imax.edumeet.databinding.ItemHeadlineBinding
 import com.imax.edumeet.databinding.ItemImageBinding
 import com.imax.edumeet.databinding.ItemMaterialAudioBinding
 import com.imax.edumeet.databinding.ItemTextBinding
+import com.imax.edumeet.databinding.ItemYoutubeBinding
 import com.imax.edumeet.models.Content
 import com.imax.edumeet.utils.getResourceId
 import com.imax.edumeet.utils.milliSecondsToTimer
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
 
 
 class TopicOverviewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Handler.Callback {
@@ -72,6 +74,13 @@ class TopicOverviewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Ha
                     .inflate(R.layout.item_material_audio, parent, false)
                 val binding = ItemMaterialAudioBinding.bind(view)
                 AudioViewHolder(binding)
+            }
+
+            VIDEO -> {
+                val view = LayoutInflater.from(parent.context)
+                    .inflate(R.layout.item_youtube, parent, false)
+                val binding = ItemYoutubeBinding.bind(view)
+                VideoViewHolder(binding)
             }
 
             else -> {
@@ -189,7 +198,8 @@ class TopicOverviewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Ha
         RecyclerView.ViewHolder(binding.root) {
         fun bind() {
             val content = models[adapterPosition]
-            binding.tvText.text = Html.fromHtml(content.body.toString(), Html.FROM_HTML_MODE_LEGACY)
+            binding.tvHeadline.text = content.type + ":"
+            binding.tvText.text = content.body.toString()
         }
     }
 
@@ -197,11 +207,11 @@ class TopicOverviewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Ha
         RecyclerView.ViewHolder(binding.root) {
         fun bind() {
             val content = models[adapterPosition]
-            binding.tvText.text = Html.fromHtml(content.body.toString(), Html.FROM_HTML_MODE_LEGACY)
+            binding.tvText.text = content.body.toString()
         }
     }
 
-    inner class EmptyViewHolder(private val binding: ItemEmptyBinding) :
+    inner class EmptyViewHolder(binding: ItemEmptyBinding) :
         RecyclerView.ViewHolder(binding.root)
 
     inner class ImageViewHolder(private val binding: ItemImageBinding) :
@@ -210,6 +220,21 @@ class TopicOverviewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Ha
             val content = models[adapterPosition]
             val resourceId = binding.root.context.getResourceId(content.body.toString())
             binding.ivPic.setImageResource(resourceId)
+        }
+    }
+
+    inner class VideoViewHolder(private val binding: ItemYoutubeBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bind() {
+            val content = models[adapterPosition]
+            val videoId = content.body.toString().drop(17)
+            binding.youtubePlayerView.addYouTubePlayerListener(object :
+                AbstractYouTubePlayerListener() {
+                override fun onReady(youTubePlayer: YouTubePlayer) {
+                    youTubePlayer.loadVideo(videoId, 0f)
+                    youTubePlayer.pause()
+                }
+            })
         }
     }
 
@@ -222,7 +247,7 @@ class TopicOverviewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Ha
             "Example" -> (holder as TextViewHolder).bind()
             "Tips" -> (holder as TextViewHolder).bind()
             "Audio" -> (holder as AudioViewHolder).bind()
-            "Video" -> (holder as TextViewHolder).bind()
+            "Video" -> (holder as VideoViewHolder).bind()
         }
     }
 
@@ -243,7 +268,7 @@ class TopicOverviewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Ha
                 "Example" -> TEXT
                 "Tips" -> TEXT
                 "Audio" -> AUDIO
-                "video" -> VIDEO
+                "Video" -> VIDEO
                 else -> -1
             }
         }
@@ -256,13 +281,6 @@ class TopicOverviewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Ha
             field = value
             notifyDataSetChanged()
         }
-
-
-//    fun submitList(models: List<MaterialGenericData>, lf: Lifecycle) {
-//        this.models = models
-//        this.lifecycle = lf
-//        this.uiUpdateHandler = Handler(Looper.getMainLooper(), this)
-//    }
 
 
     private fun updateToNonPlayingView(holder: AudioViewHolder?) {

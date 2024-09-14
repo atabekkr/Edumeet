@@ -1,5 +1,6 @@
 [versions]
 agp = "8.6.0"
+youtubePlayer = "12.1.0"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -22,6 +23,7 @@ gson = "2.10.1"
 androidx-room = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+youtube-player = { group = "com.pierfrancescosoffritti.androidyoutubeplayer", name = "core", version.ref = "youtubePlayer" }
 dagger = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHiltVersion" }
 dagger-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "daggerHiltVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
