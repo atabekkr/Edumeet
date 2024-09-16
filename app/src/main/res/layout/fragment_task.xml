@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/small_100"
             android:fontFamily="@font/font_regular"
-            android:text="3/8"
+            android:text="@string/tablo"
             android:textColor="@color/typography_4"
             android:textFontWeight="500"
             android:textSize="@dimen/normal_text_100" />

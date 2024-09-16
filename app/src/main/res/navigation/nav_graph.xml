@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph.xml"
-    app:startDestination="@id/containerFragment">
+    app:startDestination="@id/aboutAppFragment">
     <fragment
         android:id="@+id/aboutAppFragment"
         android:name="com.imax.edumeet.ui.AboutAppFragment"
