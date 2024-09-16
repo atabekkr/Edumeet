@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.LoginFragment">
+    tools:context=".ui.RegisterFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/app_bar"
@@ -29,13 +29,43 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/font_bold"
             android:gravity="center_horizontal"
-            android:text="@string/enter"
+            android:text="@string/register"
             android:textColor="@color/typography_2"
             android:textSize="@dimen/medium_size_text"
             app:layout_constraintBottom_toBottomOf="@id/btn_back"
             app:layout_constraintTop_toTopOf="@id/btn_back" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_150"
+        android:layout_marginTop="@dimen/normal_150"
+        android:fontFamily="@font/font_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/name"
+        android:textColor="@color/typography_2"
+        android:textSize="@dimen/medium_size_text"
+        app:layout_constraintBottom_toBottomOf="@id/btn_back"
+        app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_150"
+        android:layout_marginTop="@dimen/small_75"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:background="@drawable/bg_edittext_unselected"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/tv_number"
@@ -152,7 +182,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:background="@drawable/bg_edittext_unselected"
-             />
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -160,14 +190,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/normal_150"
-        android:layout_marginTop="@dimen/small_50"
+        android:layout_marginTop="@dimen/normal_150"
         android:fontFamily="@font/font_bold"
         android:gravity="center_horizontal"
-        android:text="@string/forgot_password"
-        android:textColor="@color/brand_color"
-        android:textSize="@dimen/small_text"
+        android:text="@string/group"
+        android:textColor="@color/typography_2"
+        android:textSize="@dimen/medium_size_text"
         app:layout_constraintBottom_toBottomOf="@id/btn_back"
         app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_150"
+        android:layout_marginTop="@dimen/small_75"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/group"
+            android:background="@drawable/bg_edittext_unselected"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_enter"
@@ -191,12 +238,12 @@
         android:gravity="bottom">
 
         <TextView
-            android:id="@+id/go_to_register"
+            android:id="@+id/go_to_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingVertical="@dimen/normal_100"
             android:fontFamily="@font/font_regular"
-            android:text="@string/not_registered"
+            android:text="@string/already_registered"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent" />
 

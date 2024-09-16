@@ -165,7 +165,7 @@ class TaskFragment : Fragment(R.layout.fragment_task) {
                     R.color.inputs_color
                 )
             )
-            button.text = options?.get(index) ?: "Nothing"
+            button.text = options?.getOrNull(index) ?: "Nothing"
         }
 
     }

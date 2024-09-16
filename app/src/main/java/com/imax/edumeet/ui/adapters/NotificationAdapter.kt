@@ -5,17 +5,17 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.imax.edumeet.data.models.Notification
 import com.imax.edumeet.databinding.ItemNotificationBinding
-import com.imax.edumeet.models.NotificationData
 
 class NotificationAdapter :
-    ListAdapter<NotificationData, NotificationAdapter.NotificationVh>(MyDiffUtil) {
+    ListAdapter<Notification, NotificationAdapter.NotificationVh>(MyDiffUtil) {
     inner class NotificationVh(private val binding: ItemNotificationBinding) :
         ViewHolder(binding.root) {
         fun bind() {
             val item = getItem(adapterPosition)
-            binding.tvName.text = item.name
-            binding.tvComment.text = item.comment
+            binding.tvName.text = item.from.name
+            binding.tvComment.text = item.feedback
         }
     }
 
@@ -33,17 +33,17 @@ class NotificationAdapter :
         holder.bind()
     }
 
-    private object MyDiffUtil : DiffUtil.ItemCallback<NotificationData>() {
+    private object MyDiffUtil : DiffUtil.ItemCallback<Notification>() {
         override fun areItemsTheSame(
-            oldItem: NotificationData,
-            newItem: NotificationData,
+            oldItem: Notification,
+            newItem: Notification,
         ): Boolean {
             return oldItem == newItem
         }
 
         override fun areContentsTheSame(
-            oldItem: NotificationData,
-            newItem: NotificationData,
+            oldItem: Notification,
+            newItem: Notification,
         ): Boolean {
             return oldItem == newItem
         }

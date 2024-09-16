@@ -64,6 +64,11 @@ dependencies {
     //reflection-free flavor by kirich
     implementation(libs.viewbinding.kirich)
 
+    //Retrofit
+    implementation(libs.converter.gson)
+    implementation(libs.retrofit)
+    implementation(libs.logging.interceptor)
+
     //dagger-hilt
     implementation(libs.dagger)
     ksp(libs.dagger.compiler)

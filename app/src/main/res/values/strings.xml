@@ -3,6 +3,7 @@
     <string name="text_next">Next</string>
     <string name="enter_text">Are you already using EducatorHub? <u><font fgcolor='#FF353E81'> Enter</font></u></string>
     <string name="not_registered">Not registered yet?<u><font fgcolor='#FF353E81'> Registration</font></u></string>
+    <string name="already_registered">Already register?<u><font fgcolor='#FF353E81'> Login</font></u></string>
     <string name="text_title_page_1">Confidence</string>
     <string name="text_description_page_1">With speaking lessons, you will speak in a short time</string>
     <string name="text_title_page_2">Patience</string>
@@ -32,4 +33,5 @@
     <string name="congrats">Congratulations</string>
     <string name="correct_answers_s">Correct answers: %s</string>
     <string name="tablo">%s/%s</string>
+    <string name="register">Register</string>
 </resources>

@@ -45,10 +45,14 @@ class TopicOverviewFragment : Fragment(R.layout.fragment_topic_overview) {
         binding.btnGoToTest.setOnClickListener {
             findNavController().navigate(
                 TopicOverviewFragmentDirections.actionTopicOverviewFragmentToTaskFragment(
-                    navArgs.topicId
-                )
+                    navArgs.topicId)
             )
         }
 
+    }
+
+    override fun onStop() {
+        super.onStop()
+        adapter.releaseMediaPlayer()
     }
 }

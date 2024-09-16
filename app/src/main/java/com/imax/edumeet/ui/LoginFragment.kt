@@ -31,6 +31,12 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
     private fun setupListeners() {
         binding.btnBack.setOnClickListener { findNavController().popBackStack() }
 
+        binding.goToRegister.setOnClickListener {
+            findNavController().navigate(
+                LoginFragmentDirections.actionLoginFragmentToRegisterFragment()
+            )
+        }
+
         binding.btnEnter.setOnClickListener {
             findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToContainerFragment())
 //

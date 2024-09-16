@@ -21,7 +21,9 @@ class ResultFragment : Fragment(R.layout.fragment_result) {
 
         binding.tvResult.text = getString(R.string.correct_answers_s, navArgs.result.toString())
 
-        binding.btnBack.setOnClickListener { findNavController().navigate(ResultFragmentDirections.actionResultFragmentToHomeFragment()) }
+        binding.btnBack.setOnClickListener {
+            findNavController().popBackStack()
+        }
 
     }
 }
