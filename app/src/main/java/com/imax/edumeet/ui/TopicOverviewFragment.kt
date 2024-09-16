@@ -15,7 +15,7 @@ import com.imax.edumeet.utils.getJsonDataFromAsset
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class TopicOverviewFragment: Fragment(R.layout.fragment_topic_overview) {
+class TopicOverviewFragment : Fragment(R.layout.fragment_topic_overview) {
 
     private val binding by viewBinding(FragmentTopicOverviewBinding::bind)
     private val navArgs by navArgs<TopicOverviewFragmentArgs>()
@@ -28,7 +28,7 @@ class TopicOverviewFragment: Fragment(R.layout.fragment_topic_overview) {
         val data = Gson().fromJson(jsonString, Theory::class.java)
 
         val reading = data.theory.single { it.id == navArgs.sectionId }
-        val content = reading.topics.single {it.topic_id == navArgs.topicId}
+        val content = reading.topics.single { it.topic_id == navArgs.topicId }
 
         binding.recyclerView.adapter = adapter
 
@@ -39,7 +39,16 @@ class TopicOverviewFragment: Fragment(R.layout.fragment_topic_overview) {
 
         binding.btnBack.setOnClickListener {
             adapter.releaseMediaPlayer()
-            findNavController().popBackStack() }
+            findNavController().popBackStack()
+        }
+
+        binding.btnGoToTest.setOnClickListener {
+            findNavController().navigate(
+                TopicOverviewFragmentDirections.actionTopicOverviewFragmentToTaskFragment(
+                    navArgs.topicId
+                )
+            )
+        }
 
     }
 }

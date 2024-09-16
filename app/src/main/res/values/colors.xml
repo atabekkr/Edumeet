@@ -14,4 +14,6 @@
     <color name="typography_3">#1A2530</color>
     <color name="typography_4">#000000</color>
     <color name="typography_5">#9E9E9E</color>
+    <color name="bg_progress">#E1E4FA</color>
+    <color name="transparent">#00000000</color>
 </resources>

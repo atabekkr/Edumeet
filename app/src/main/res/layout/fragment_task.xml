@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.TaskFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/standard_icon_size"
+            android:layout_height="@dimen/standard_icon_size"
+            android:layout_margin="@dimen/small_125"
+            android:padding="@dimen/small_125"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/task"
+            android:textColor="@color/typography_2"
+            android:textSize="@dimen/medium_size_text"
+            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+            app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_150"
+        android:layout_marginTop="@dimen/large_100"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/small_100"
+            android:layout_weight="8"
+            android:progressDrawable="@drawable/custom_progress" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/small_100"
+            android:fontFamily="@font/font_regular"
+            android:text="3/8"
+            android:textColor="@color/typography_4"
+            android:textFontWeight="500"
+            android:textSize="@dimen/normal_text_100" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_150"
+        android:layout_marginTop="@dimen/large_100"
+        android:fontFamily="@font/font_regular"
+        android:textColor="@color/typography_3"
+        android:textFontWeight="500"
+        android:textSize="@dimen/medium_size_text"
+        tools:text="People say that good friends are there for you in difficult times. ____ that good friends are there for you in difficult times." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_100"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_option_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/normal_150"
+            android:layout_marginTop="@dimen/small_50"
+            android:backgroundTint="@color/inputs_color"
+            android:fontFamily="@font/font_regular"
+            android:textColor="@color/typography_3"
+            android:textFontWeight="500"
+            app:cornerRadius="@dimen/small_100"
+            tools:text="Is said" />
+
+        <Button
+            android:id="@+id/btn_option_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/normal_150"
+            android:layout_marginTop="@dimen/small_100"
+            android:backgroundTint="@color/inputs_color"
+            android:fontFamily="@font/font_regular"
+            android:textColor="@color/typography_3"
+            android:textFontWeight="500"
+            app:cornerRadius="@dimen/small_100"
+            tools:text="Is said" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_option_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/normal_150"
+            android:layout_marginTop="@dimen/small_100"
+            android:backgroundTint="@color/inputs_color"
+            android:fontFamily="@font/font_regular"
+            android:textColor="@color/typography_3"
+            android:textFontWeight="500"
+            app:cornerRadius="@dimen/small_100"
+            tools:text="Is said" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_150"
+        android:layout_marginTop="@dimen/large_150"
+        android:backgroundTint="@color/brand_color"
+        android:fontFamily="@font/font_bold"
+        android:paddingVertical="@dimen/normal_100"
+        android:text="@string/text_next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_text_125"
+        app:cornerRadius="@dimen/normal_100"
+        app:layout_constraintBottom_toTopOf="@id/tv_enter" />
+
+</LinearLayout>

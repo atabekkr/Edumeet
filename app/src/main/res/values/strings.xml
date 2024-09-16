@@ -28,4 +28,7 @@
     <string name="notification">Notification</string>
     <string name="reading_text">Reading Text</string>
     <string name="go_to_test">Go to Test</string>
+    <string name="task">Task</string>
+    <string name="congrats">Congratulations</string>
+    <string name="correct_answers_s">Correct answers: %s</string>
 </resources>

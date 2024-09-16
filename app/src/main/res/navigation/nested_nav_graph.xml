@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nested_nav_graph.xml"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/taskFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -55,5 +55,34 @@
         <argument
             android:name="sectionId"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_topicOverviewFragment_to_taskFragment"
+            app:destination="@id/taskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskFragment"
+        android:name="com.imax.edumeet.ui.TaskFragment"
+        android:label="fragment_task"
+        tools:layout="@layout/fragment_task" >
+        <argument
+            android:name="topicId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_taskFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/topicOverviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.imax.edumeet.ui.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="result"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_resultFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nested_nav_graph.xml" />
     </fragment>
 </navigation>

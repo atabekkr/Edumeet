@@ -21,8 +21,8 @@
             android:text="@string/main"
             android:textColor="@color/typography_2"
             android:textSize="@dimen/medium_size_text"
-            app:layout_constraintBottom_toBottomOf="@id/btn_back"
-            app:layout_constraintTop_toTopOf="@id/btn_back" />
+            app:layout_constraintBottom_toBottomOf="@id/btn_notifications"
+            app:layout_constraintTop_toTopOf="@id/btn_notifications" />
 
         <ImageView
             android:id="@+id/btn_notifications"
