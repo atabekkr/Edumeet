@@ -3,6 +3,7 @@ package com.imax.edumeet.data
 import com.imax.edumeet.data.models.Notifications
 import com.imax.edumeet.data.models.Register
 import com.imax.edumeet.data.models.RegisterResponse
+import com.imax.edumeet.data.models.Student
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -16,5 +17,8 @@ interface EdumeetApi {
 
     @GET("/notifications/{studentId}")
     suspend fun getNotifications(@Path("studentId") studentId: String) : Response<Notifications>
+
+    @GET("/student/me")
+    suspend fun getStudent() : Response<Student>
 
 }

@@ -34,4 +34,7 @@
     <string name="correct_answers_s">Correct answers: %s</string>
     <string name="tablo">%s/%s</string>
     <string name="register">Register</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password_confirmation">Password confirmation</string>
+    <string name="save">Save</string>
 </resources>

@@ -33,7 +33,11 @@
         android:id="@+id/profileFragment"
         android:name="com.imax.edumeet.ui.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_passwordConfirmationFragment"
+            app:destination="@id/passwordConfirmationFragment" />
+    </fragment>
     <fragment
         android:id="@+id/ratingFragment"
         android:name="com.imax.edumeet.ui.RatingFragment"
@@ -80,5 +84,17 @@
         <argument
             android:name="result"
             app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordConfirmationFragment"
+        android:name="com.imax.edumeet.ui.PasswordConfirmationFragment"
+        android:label="fragment_password_confirmation"
+        tools:layout="@layout/fragment_password_confirmation" >
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
     </fragment>
 </navigation>

@@ -6,6 +6,7 @@ import com.imax.edumeet.data.MainRepository
 import com.imax.edumeet.data.models.Notifications
 import com.imax.edumeet.data.models.Register
 import com.imax.edumeet.data.models.RegisterResponse
+import com.imax.edumeet.data.models.Student
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -23,6 +24,10 @@ class MainViewModel @Inject constructor(private val repository: MainRepository) 
     val getNotificationResult: Flow<Result<Notifications>>
         get() = _getNotificationResult
 
+    private val _getStudent = MutableSharedFlow<Result<Student>>()
+    val getStudent: Flow<Result<Student>>
+        get() = _getStudent
+
     fun register(data: Register) {
         viewModelScope.launch {
             _authResult.emit(repository.register(data))
@@ -32,6 +37,12 @@ class MainViewModel @Inject constructor(private val repository: MainRepository) 
     fun getNotifications(studentId: String) {
         viewModelScope.launch {
             _getNotificationResult.emit(repository.getNotifications(studentId))
+        }
+    }
+
+    fun getStudent() {
+        viewModelScope.launch {
+            _getStudent.emit(repository.getStudent())
         }
     }
 

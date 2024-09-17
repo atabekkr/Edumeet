@@ -2,6 +2,7 @@ package com.imax.edumeet.ui
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -45,6 +46,7 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
             val password = binding.inputPassword.text.toString()
             val group = binding.inputGroup.text.toString()
             viewModel.register(Register(name, password, phoneNumber, group))
+            binding.loadingProgressBar.isVisible = true
         }
 
     }
@@ -64,6 +66,7 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
                 it.printStackTrace()
                 snackBar(it.localizedMessage)
             }
+            binding.loadingProgressBar.isVisible = false
         }.launchIn(viewLifecycleOwner.lifecycleScope)
     }
 }
