@@ -37,4 +37,7 @@
     <string name="phone_number">Phone number</string>
     <string name="password_confirmation">Password confirmation</string>
     <string name="save">Save</string>
+    <string name="edit_name">Edit name</string>
+    <string name="not_found">Not found</string>
+    <string name="nothing_to_show">Nothing to show</string>
 </resources>

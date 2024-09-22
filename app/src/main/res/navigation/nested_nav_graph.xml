@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_profileFragment_to_passwordConfirmationFragment"
             app:destination="@id/passwordConfirmationFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editNameFragment"
+            app:destination="@id/editNameFragment" />
     </fragment>
     <fragment
         android:id="@+id/ratingFragment"
@@ -95,6 +98,15 @@
             app:argType="string" />
         <argument
             android:name="password"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNameFragment"
+        android:name="com.imax.edumeet.ui.EditNameFragment"
+        android:label="fragment_edit_name"
+        tools:layout="@layout/fragment_edit_name" >
+        <argument
+            android:name="name"
             app:argType="string" />
     </fragment>
 </navigation>

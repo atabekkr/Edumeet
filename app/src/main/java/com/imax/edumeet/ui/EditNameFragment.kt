@@ -10,25 +10,20 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.imax.edumeet.R
-import com.imax.edumeet.databinding.FragmentPasswordConfirmationBinding
-import com.imax.edumeet.models.Login
+import com.imax.edumeet.databinding.FragmentEditNameBinding
+import com.imax.edumeet.models.Group
 import com.imax.edumeet.ui.viewmodel.MainViewModel
-import com.imax.edumeet.utils.LocalStorage
 import com.imax.edumeet.utils.snackBar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-import javax.inject.Inject
 
 @AndroidEntryPoint
-class PasswordConfirmationFragment: Fragment(R.layout.fragment_password_confirmation) {
+class EditNameFragment: Fragment(R.layout.fragment_edit_name) {
 
-    private val binding by viewBinding(FragmentPasswordConfirmationBinding::bind)
-    private val navArgs by navArgs<PasswordConfirmationFragmentArgs>()
+    private val binding by viewBinding(FragmentEditNameBinding::bind)
+    private val navArgs by navArgs<EditNameFragmentArgs>()
     private val viewModel by viewModels<MainViewModel>()
-
-    @Inject
-    lateinit var localStorage: LocalStorage
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -39,17 +34,14 @@ class PasswordConfirmationFragment: Fragment(R.layout.fragment_password_confirma
     }
 
     private fun setupListeners() {
-
-        binding.etPhone.setText(navArgs.phone)
-        binding.etPassword.setText(navArgs.password)
+        binding.etName.setText(navArgs.name)
 
         binding.btnBack.setOnClickListener { findNavController().popBackStack() }
 
         binding.btnSave.setOnClickListener {
-            val phone = binding.etPhone.text.toString()
-            val password = binding.etPassword.text.toString()
+            val name = binding.etName.text.toString()
+            viewModel.editName(Group(name))
             binding.loadingProgressBar.isVisible = true
-            viewModel.editPhoneAndPassword(Login(phone, password))
         }
     }
 

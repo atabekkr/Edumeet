@@ -24,8 +24,8 @@ class ContainerFragment : Fragment(R.layout.fragment_containter) {
 
         setupData()
 
-        binding.fab.setOnClickListener {
-            binding.bottomNavigationView.selectedItemId = R.id.homeFragment
+        binding.fabAdd.setOnClickListener {
+            binding.bottomNav.selectedItemId = R.id.homeFragment
         }
 
     }
@@ -37,7 +37,7 @@ class ContainerFragment : Fragment(R.layout.fragment_containter) {
 
         navController = navHostFragment.navController
 
-        binding.bottomNavigationView.setupWithNavController(navController!!)
+        binding.bottomNav.setupWithNavController(navController!!)
 
         //get the drawable
         val myFabSrc = resources.getDrawable(R.drawable.ic_home)
@@ -49,7 +49,7 @@ class ContainerFragment : Fragment(R.layout.fragment_containter) {
         willBeWhite.mutate().setColorFilter(Color.WHITE, PorterDuff.Mode.MULTIPLY)
 
         //set it to your fab button initialized before
-        binding.fab.setImageDrawable(willBeWhite)
+        binding.fabAdd.setImageDrawable(willBeWhite)
 
     }
 

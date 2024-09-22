@@ -45,4 +45,25 @@
         tools:listitem="@layout/item_notification"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
+    <LinearLayout
+        android:id="@+id/ll_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv_not_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_regular"
+            android:gravity="center_horizontal"
+            android:text="@string/nothing_to_show"
+            android:textColor="@color/typography_2"
+            android:textSize="@dimen/medium_size_text"
+            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+            app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+    </LinearLayout>
+
 </LinearLayout>

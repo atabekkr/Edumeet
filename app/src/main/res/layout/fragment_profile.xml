@@ -134,6 +134,7 @@
                     tools:ignore="SpUsage" />
 
                 <ImageView
+                    android:id="@+id/iv_edit_name"
                     android:layout_width="@dimen/normal_150"
                     android:layout_height="@dimen/normal_150"
                     android:src="@drawable/ic_edit"

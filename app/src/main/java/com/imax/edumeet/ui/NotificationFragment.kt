@@ -44,11 +44,18 @@ class NotificationFragment : Fragment(R.layout.fragment_notification) {
     private fun setupObservers() {
         viewModel.getNotificationResult.onEach { result ->
             result.onSuccess {
-                adapter.submitList(it.notifications)
+                if (it.notifications.isEmpty()) {
+                    binding.llNotFound.visibility = View.VISIBLE
+                    binding.recyclerView.visibility = View.GONE
+                } else {
+                    adapter.submitList(it.notifications)
+                }
             }
             result.onFailure {
                 it.printStackTrace()
                 snackBar(it.localizedMessage)
+                binding.llNotFound.visibility = View.VISIBLE
+                binding.recyclerView.visibility = View.GONE
             }
         }.launchIn(viewLifecycleOwner.lifecycleScope)
     }

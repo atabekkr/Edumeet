@@ -76,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/normal_150"
-            android:layout_marginTop="@dimen/normal_150"
+            android:layout_marginTop="@dimen/normal_100"
             android:fontFamily="@font/font_bold"
             android:gravity="center_horizontal"
             android:text="@string/number"
@@ -163,7 +163,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/normal_150"
-            android:layout_marginTop="@dimen/normal_150"
+            android:layout_marginTop="@dimen/normal_100"
             android:fontFamily="@font/font_bold"
             android:gravity="center_horizontal"
             android:text="@string/password"
@@ -194,7 +194,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/normal_150"
-            android:layout_marginTop="@dimen/normal_150"
+            android:layout_marginTop="@dimen/normal_100"
             android:fontFamily="@font/font_bold"
             android:gravity="center_horizontal"
             android:text="@string/group"
@@ -204,17 +204,19 @@
             app:layout_constraintTop_toTopOf="@id/btn_back" />
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/normal_150"
             android:layout_marginTop="@dimen/small_75"
             app:hintEnabled="false">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <AutoCompleteTextView
                 android:id="@+id/input_group"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/group"
+                android:inputType="none"
                 android:background="@drawable/bg_edittext_unselected"
                 />
 

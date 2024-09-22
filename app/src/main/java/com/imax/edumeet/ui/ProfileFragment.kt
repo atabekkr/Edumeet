@@ -29,6 +29,13 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         viewModel.getStudent()
         setupObservers()
 
+        binding.ivEditName.setOnClickListener {
+            val name = binding.tvName.text.toString()
+            findNavController().navigate(
+                ProfileFragmentDirections.actionProfileFragmentToEditNameFragment(name)
+            )
+        }
+
         binding.ivEditNumber.setOnClickListener {
             val phone = binding.tvPhone.text.toString()
             val password = binding.tvPassword.text.toString()

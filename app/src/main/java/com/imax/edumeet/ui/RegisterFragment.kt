@@ -2,6 +2,7 @@ package com.imax.edumeet.ui
 
 import android.os.Bundle
 import android.view.View
+import android.widget.ArrayAdapter
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -11,6 +12,7 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.imax.edumeet.R
 import com.imax.edumeet.data.models.Register
 import com.imax.edumeet.databinding.FragmentRegisterBinding
+import com.imax.edumeet.models.Group
 import com.imax.edumeet.ui.viewmodel.MainViewModel
 import com.imax.edumeet.utils.LocalStorage
 import com.imax.edumeet.utils.MaskWatcher
@@ -21,7 +23,7 @@ import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class RegisterFragment: Fragment(R.layout.fragment_register) {
+class RegisterFragment : Fragment(R.layout.fragment_register) {
 
     private val binding by viewBinding(FragmentRegisterBinding::bind)
     private val viewModel by viewModels<MainViewModel>()
@@ -33,6 +35,7 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
         super.onViewCreated(view, savedInstanceState)
 
         setupObservers()
+        viewModel.getGroups()
 
         binding.etPhoneNumber.addTextChangedListener(MaskWatcher.phoneNumber())
 
@@ -67,6 +70,18 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
                 snackBar(it.localizedMessage)
             }
             binding.loadingProgressBar.isVisible = false
+        }.launchIn(viewLifecycleOwner.lifecycleScope)
+
+        viewModel.getGroups.onEach { result ->
+            result.onSuccess {
+                val listOfGroups = it.map { group: Group -> group.name }
+                val arrayAdapter = ArrayAdapter(requireContext(), R.layout.item_dropdown, listOfGroups)
+                binding.inputGroup.setAdapter(arrayAdapter)
+            }
+            result.onFailure {
+                it.printStackTrace()
+                snackBar(it.localizedMessage)
+            }
         }.launchIn(viewLifecycleOwner.lifecycleScope)
     }
 }

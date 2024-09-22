@@ -10,6 +10,6 @@ object Constants {
     const val TRUEFALSE = 2
     const val MATCHING = 3
 
-    const val BASE_URL = "https://stream-service-amber.vercel.app"
+    const val BASE_URL = "https://stream-service-api.vercel.app"
 
 }

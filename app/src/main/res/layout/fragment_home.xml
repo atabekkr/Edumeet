@@ -21,19 +21,48 @@
             android:text="@string/main"
             android:textColor="@color/typography_2"
             android:textSize="@dimen/medium_size_text"
-            app:layout_constraintBottom_toBottomOf="@id/btn_notifications"
-            app:layout_constraintTop_toTopOf="@id/btn_notifications" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/btn_notifications"
-            android:layout_width="@dimen/standard_icon_size"
-            android:layout_height="@dimen/standard_icon_size"
-            android:layout_margin="@dimen/small_125"
-            android:padding="@dimen/small_50"
-            android:src="@drawable/ic_profile_with_notification"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btn_notifications"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginVertical="@dimen/small_125"
+                android:layout_marginEnd="@dimen/normal_150"
+                android:background="@drawable/bg_for_person"
+                android:padding="@dimen/small_100"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_count_of_notification"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:visibility="invisible"
+                android:layout_marginTop="-4dp"
+                android:layout_marginEnd="-4dp"
+                android:background="@drawable/bg_for_count_of_notification"
+                android:fontFamily="@font/font_regular"
+                android:text="2"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="@id/btn_notifications"
+                app:layout_constraintTop_toTopOf="@id/btn_notifications" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
