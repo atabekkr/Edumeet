@@ -10,419 +10,427 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font_bold"
-            android:gravity="center_horizontal"
-            android:text="@string/main"
-            android:textColor="@color/typography_2"
-            android:textSize="@dimen/medium_size_text"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/btn_notifications"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_marginVertical="@dimen/small_125"
-                android:layout_marginEnd="@dimen/normal_150"
-                android:background="@drawable/bg_for_person"
-                android:padding="@dimen/small_100"
-                android:src="@drawable/ic_person"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/tv_count_of_notification"
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:visibility="invisible"
-                android:layout_marginTop="-4dp"
-                android:layout_marginEnd="-4dp"
-                android:background="@drawable/bg_for_count_of_notification"
-                android:fontFamily="@font/font_regular"
-                android:text="2"
-                android:gravity="center"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textFontWeight="700"
-                android:textSize="8sp"
-                app:layout_constraintEnd_toEndOf="@id/btn_notifications"
-                app:layout_constraintTop_toTopOf="@id/btn_notifications" />
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_bold"
+                android:gravity="center_horizontal"
+                android:text="@string/main"
+                android:textColor="@color/typography_2"
+                android:textSize="@dimen/medium_size_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/btn_notifications"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginVertical="@dimen/small_125"
+                    android:layout_marginEnd="@dimen/normal_150"
+                    android:background="@drawable/bg_for_person"
+                    android:padding="@dimen/small_100"
+                    android:src="@drawable/ic_person"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_count_of_notification"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginEnd="-4dp"
+                    android:background="@drawable/bg_for_count_of_notification"
+                    android:fontFamily="@font/font_regular"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textFontWeight="700"
+                    android:textSize="8sp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="@id/btn_notifications"
+                    app:layout_constraintTop_toTopOf="@id/btn_notifications" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_listening"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/normal_150"
-        android:layout_marginTop="@dimen/normal_100"
-        android:backgroundTint="@color/inputs_color"
-        app:cardCornerRadius="@dimen/small_150"
-        app:strokeWidth="0dp">
-
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_listening"
             android:layout_width="match_parent"
-            android:weightSum="10"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginHorizontal="@dimen/normal_150"
+            android:layout_marginTop="@dimen/normal_100"
+            android:backgroundTint="@color/inputs_color"
+            app:cardCornerRadius="@dimen/small_150"
+            app:strokeWidth="0dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="9"
-                android:layout_marginStart="@dimen/normal_125"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/normal_100"
-                    android:fontFamily="@font/font_bold"
-                    android:gravity="center_horizontal"
-                    android:text="@string/listening"
-                    android:textColor="@color/typography_3"
-                    android:textSize="@dimen/medium_size_text"
-                    app:layout_constraintBottom_toBottomOf="@id/btn_back"
-                    app:layout_constraintTop_toTopOf="@id/btn_back" />
+                android:orientation="horizontal"
+                android:weightSum="10">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:weightSum="10"
-                    android:orientation="horizontal">
-
-                    <ProgressBar
-                        android:id="@+id/progress_listening"
-                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                        android:layout_width="0dp"
-                        android:layout_weight="9"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:max="100"
-                        android:progress="60"
-                        android:progressBackgroundTint="@color/white"
-                        android:progressTint="@color/brand_color" />
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/normal_125"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_listening_percent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:layout_marginVertical="@dimen/normal_100"
-                        android:layout_marginStart="@dimen/small_75"
+                        android:layout_marginTop="@dimen/normal_100"
                         android:fontFamily="@font/font_bold"
                         android:gravity="center_horizontal"
-                        android:text="60%"
-                        android:textColor="@color/brand_color"
+                        android:text="@string/listening"
+                        android:textColor="@color/typography_3"
                         android:textSize="@dimen/medium_size_text"
                         app:layout_constraintBottom_toBottomOf="@id/btn_back"
                         app:layout_constraintTop_toTopOf="@id/btn_back" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ProgressBar
+                            android:id="@+id/progress_listening"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="9"
+                            android:max="100"
+                            android:progress="60"
+                            android:progressBackgroundTint="@color/white"
+                            android:progressTint="@color/brand_color" />
+
+                        <TextView
+                            android:id="@+id/tv_listening_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="@dimen/normal_100"
+                            android:layout_marginStart="@dimen/small_75"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/font_bold"
+                            android:gravity="center_horizontal"
+                            android:text="60%"
+                            android:textColor="@color/brand_color"
+                            android:textSize="@dimen/medium_size_text"
+                            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                            app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                    </LinearLayout>
+
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/normal_200"
+                    android:layout_weight="1"
+                    android:rotation="180"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/brand_color" />
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/normal_200"
-                android:rotation="180"
-                android:layout_weight="1"
-                android:src="@drawable/ic_back"
-                app:tint="@color/brand_color" />
+        </com.google.android.material.card.MaterialCardView>
 
-        </LinearLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_reading"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/normal_150"
-        android:layout_marginTop="@dimen/normal_100"
-        android:backgroundTint="@color/inputs_color"
-        app:cardCornerRadius="@dimen/small_150"
-        app:strokeWidth="0dp">
-
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_reading"
             android:layout_width="match_parent"
-            android:weightSum="10"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginHorizontal="@dimen/normal_150"
+            android:layout_marginTop="@dimen/normal_100"
+            android:backgroundTint="@color/inputs_color"
+            app:cardCornerRadius="@dimen/small_150"
+            app:strokeWidth="0dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="9"
-                android:layout_marginStart="@dimen/normal_125"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/normal_100"
-                    android:fontFamily="@font/font_bold"
-                    android:gravity="center_horizontal"
-                    android:text="@string/reading"
-                    android:textColor="@color/typography_3"
-                    android:textSize="@dimen/medium_size_text"
-                    app:layout_constraintBottom_toBottomOf="@id/btn_back"
-                    app:layout_constraintTop_toTopOf="@id/btn_back" />
+                android:orientation="horizontal"
+                android:weightSum="10">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:weightSum="10"
-                    android:orientation="horizontal">
-
-                    <ProgressBar
-                        android:id="@+id/progress_reading"
-                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                        android:layout_width="0dp"
-                        android:layout_weight="9"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:max="100"
-                        android:progress="60"
-                        android:progressBackgroundTint="@color/white"
-                        android:progressTint="@color/brand_color" />
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/normal_125"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_reading_percent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:layout_marginVertical="@dimen/normal_100"
-                        android:layout_marginStart="@dimen/small_75"
+                        android:layout_marginTop="@dimen/normal_100"
                         android:fontFamily="@font/font_bold"
                         android:gravity="center_horizontal"
-                        android:text="60%"
-                        android:textColor="@color/brand_color"
+                        android:text="@string/reading"
+                        android:textColor="@color/typography_3"
                         android:textSize="@dimen/medium_size_text"
                         app:layout_constraintBottom_toBottomOf="@id/btn_back"
                         app:layout_constraintTop_toTopOf="@id/btn_back" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ProgressBar
+                            android:id="@+id/progress_reading"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="9"
+                            android:max="100"
+                            android:progress="60"
+                            android:progressBackgroundTint="@color/white"
+                            android:progressTint="@color/brand_color" />
+
+                        <TextView
+                            android:id="@+id/tv_reading_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="@dimen/normal_100"
+                            android:layout_marginStart="@dimen/small_75"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/font_bold"
+                            android:gravity="center_horizontal"
+                            android:text="60%"
+                            android:textColor="@color/brand_color"
+                            android:textSize="@dimen/medium_size_text"
+                            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                            app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                    </LinearLayout>
+
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/normal_200"
+                    android:layout_weight="1"
+                    android:rotation="180"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/brand_color" />
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/normal_200"
-                android:rotation="180"
-                android:layout_weight="1"
-                android:src="@drawable/ic_back"
-                app:tint="@color/brand_color" />
+        </com.google.android.material.card.MaterialCardView>
 
-        </LinearLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_writing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/normal_150"
-        android:layout_marginTop="@dimen/normal_100"
-        android:backgroundTint="@color/inputs_color"
-        app:cardCornerRadius="@dimen/small_150"
-        app:strokeWidth="0dp">
-
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_writing"
             android:layout_width="match_parent"
-            android:weightSum="10"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginHorizontal="@dimen/normal_150"
+            android:layout_marginTop="@dimen/normal_100"
+            android:backgroundTint="@color/inputs_color"
+            app:cardCornerRadius="@dimen/small_150"
+            app:strokeWidth="0dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="9"
-                android:layout_marginStart="@dimen/normal_125"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/normal_100"
-                    android:fontFamily="@font/font_bold"
-                    android:gravity="center_horizontal"
-                    android:text="@string/writing"
-                    android:textColor="@color/typography_3"
-                    android:textSize="@dimen/medium_size_text"
-                    app:layout_constraintBottom_toBottomOf="@id/btn_back"
-                    app:layout_constraintTop_toTopOf="@id/btn_back" />
+                android:orientation="horizontal"
+                android:weightSum="10">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:weightSum="10"
-                    android:orientation="horizontal">
-
-                    <ProgressBar
-                        android:id="@+id/progress_writing"
-                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                        android:layout_width="0dp"
-                        android:layout_weight="9"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:max="100"
-                        android:progress="60"
-                        android:progressBackgroundTint="@color/white"
-                        android:progressTint="@color/brand_color" />
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/normal_125"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_writing_percent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:layout_marginVertical="@dimen/normal_100"
-                        android:layout_marginStart="@dimen/small_75"
+                        android:layout_marginTop="@dimen/normal_100"
                         android:fontFamily="@font/font_bold"
                         android:gravity="center_horizontal"
-                        android:text="60%"
-                        android:textColor="@color/brand_color"
+                        android:text="@string/writing"
+                        android:textColor="@color/typography_3"
                         android:textSize="@dimen/medium_size_text"
                         app:layout_constraintBottom_toBottomOf="@id/btn_back"
                         app:layout_constraintTop_toTopOf="@id/btn_back" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ProgressBar
+                            android:id="@+id/progress_writing"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="9"
+                            android:max="100"
+                            android:progress="60"
+                            android:progressBackgroundTint="@color/white"
+                            android:progressTint="@color/brand_color" />
+
+                        <TextView
+                            android:id="@+id/tv_writing_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="@dimen/normal_100"
+                            android:layout_marginStart="@dimen/small_75"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/font_bold"
+                            android:gravity="center_horizontal"
+                            android:text="60%"
+                            android:textColor="@color/brand_color"
+                            android:textSize="@dimen/medium_size_text"
+                            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                            app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                    </LinearLayout>
+
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/normal_200"
+                    android:layout_weight="1"
+                    android:rotation="180"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/brand_color" />
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/normal_200"
-                android:rotation="180"
-                android:layout_weight="1"
-                android:src="@drawable/ic_back"
-                app:tint="@color/brand_color" />
+        </com.google.android.material.card.MaterialCardView>
 
-        </LinearLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_speaking"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/normal_150"
-        android:layout_marginTop="@dimen/normal_100"
-        android:backgroundTint="@color/inputs_color"
-        app:cardCornerRadius="@dimen/small_150"
-        app:strokeWidth="0dp">
-
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_speaking"
             android:layout_width="match_parent"
-            android:weightSum="10"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginHorizontal="@dimen/normal_150"
+            android:layout_marginTop="@dimen/normal_100"
+            android:backgroundTint="@color/inputs_color"
+            app:cardCornerRadius="@dimen/small_150"
+            app:strokeWidth="0dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="9"
-                android:layout_marginStart="@dimen/normal_125"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/normal_100"
-                    android:fontFamily="@font/font_bold"
-                    android:gravity="center_horizontal"
-                    android:text="@string/speaking"
-                    android:textColor="@color/typography_3"
-                    android:textSize="@dimen/medium_size_text"
-                    app:layout_constraintBottom_toBottomOf="@id/btn_back"
-                    app:layout_constraintTop_toTopOf="@id/btn_back" />
+                android:orientation="horizontal"
+                android:weightSum="10">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:weightSum="10"
-                    android:orientation="horizontal">
-
-                    <ProgressBar
-                        android:id="@+id/progress_speaking"
-                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                        android:layout_width="0dp"
-                        android:layout_weight="9"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:max="100"
-                        android:progress="60"
-                        android:progressBackgroundTint="@color/white"
-                        android:progressTint="@color/brand_color" />
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/normal_125"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_speaking_percent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:layout_marginVertical="@dimen/normal_100"
-                        android:layout_marginStart="@dimen/small_75"
+                        android:layout_marginTop="@dimen/normal_100"
                         android:fontFamily="@font/font_bold"
                         android:gravity="center_horizontal"
-                        android:text="60%"
-                        android:textColor="@color/brand_color"
+                        android:text="@string/speaking"
+                        android:textColor="@color/typography_3"
                         android:textSize="@dimen/medium_size_text"
                         app:layout_constraintBottom_toBottomOf="@id/btn_back"
                         app:layout_constraintTop_toTopOf="@id/btn_back" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ProgressBar
+                            android:id="@+id/progress_speaking"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="9"
+                            android:max="100"
+                            android:progress="60"
+                            android:progressBackgroundTint="@color/white"
+                            android:progressTint="@color/brand_color" />
+
+                        <TextView
+                            android:id="@+id/tv_speaking_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="@dimen/normal_100"
+                            android:layout_marginStart="@dimen/small_75"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/font_bold"
+                            android:gravity="center_horizontal"
+                            android:text="60%"
+                            android:textColor="@color/brand_color"
+                            android:textSize="@dimen/medium_size_text"
+                            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                            app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+                    </LinearLayout>
+
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/normal_200"
+                    android:layout_weight="1"
+                    android:rotation="180"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/brand_color" />
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/normal_200"
-                android:rotation="180"
-                android:layout_weight="1"
-                android:src="@drawable/ic_back"
-                app:tint="@color/brand_color" />
+        </com.google.android.material.card.MaterialCardView>
 
-        </LinearLayout>
-
-    </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_go_to_ai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_150"
+            android:backgroundTint="@color/brand_color"
+            android:text="Go to AI" />
 
     </LinearLayout>
 

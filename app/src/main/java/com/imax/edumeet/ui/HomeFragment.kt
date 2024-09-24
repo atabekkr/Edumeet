@@ -80,6 +80,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             )
         }
 
+        binding.btnGoToAi.setOnClickListener {
+            findNavController().navigate(
+                HomeFragmentDirections.actionHomeFragmentToSelectAISectionFragment()
+            )
+        }
+
     }
 
     private fun setupObservers() {

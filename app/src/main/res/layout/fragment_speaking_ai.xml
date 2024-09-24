@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SpeakingAIFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="@dimen/standard_icon_size"
+                    android:layout_height="@dimen/standard_icon_size"
+                    android:layout_margin="@dimen/small_125"
+                    android:padding="@dimen/small_125"
+                    android:src="@drawable/ic_back"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/speaking"
+                    android:textColor="@color/typography_2"
+                    android:textSize="@dimen/medium_size_text"
+                    app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                    app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normal_150"
+                android:layout_marginTop="@dimen/small_75"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_unselected"
+                    android:hint="@string/topic" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_150">
+
+                <EditText
+                    android:id="@+id/et_essay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_unselected"
+                    android:fontFamily="@font/font_regular"
+                    android:gravity="top"
+                    android:hint="Click on Mic to speak"
+                    android:minHeight="200dp"
+                    android:padding="@dimen/normal_100"
+                    android:textColor="@color/typography_4"
+                    android:textColorHint="@color/typography_4"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/medium_size_text"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_mic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/normal_100"
+                    android:src="@drawable/ic_mic"
+                    app:layout_constraintBottom_toBottomOf="@id/et_essay"
+                    app:layout_constraintEnd_toStartOf="@id/btn_send" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/normal_100"
+                    android:src="@drawable/ic_send"
+                    app:layout_constraintBottom_toBottomOf="@id/et_essay"
+                    app:layout_constraintEnd_toEndOf="@id/et_essay" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/normal_150"
+                android:layout_marginTop="@dimen/normal_100"
+                android:fontFamily="@font/font_bold"
+                android:text="@string/response"
+                android:textColorHint="@color/typography_4"
+                android:textSize="@dimen/medium_size_text" />
+
+            <EditText
+                android:id="@+id/et_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normal_150"
+                android:layout_marginTop="@dimen/normal_100"
+                android:background="@drawable/bg_edittext_unselected"
+                android:enabled="false"
+                android:fontFamily="@font/font_regular"
+                android:gravity="top"
+                android:hint="Loading..."
+                android:inputType="none"
+                android:minHeight="200dp"
+                android:padding="@dimen/normal_100"
+                android:textColor="@color/typography_4"
+                android:textFontWeight="500"
+                android:textSize="@dimen/medium_size_text" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

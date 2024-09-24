@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_notificationFragment"
             app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_selectAISectionFragment"
+            app:destination="@id/selectAISectionFragment" />
     </fragment>
     <fragment
         android:id="@+id/topicsFragment"
@@ -118,4 +121,26 @@
             android:name="name"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/selectAISectionFragment"
+        android:name="com.imax.edumeet.ui.SelectAISectionFragment"
+        android:label="fragment_select_ai_section"
+        tools:layout="@layout/fragment_select_ai_section" >
+        <action
+            android:id="@+id/action_selectAISectionFragment_to_writingAIFragment"
+            app:destination="@id/writingAIFragment" />
+        <action
+            android:id="@+id/action_selectAISectionFragment_to_speakingAIFragment"
+            app:destination="@id/speakingAIFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/writingAIFragment"
+        android:name="com.imax.edumeet.ui.WritingAIFragment"
+        android:label="fragment_writing_ai"
+        tools:layout="@layout/fragment_writing_ai" />
+    <fragment
+        android:id="@+id/speakingAIFragment"
+        android:name="com.imax.edumeet.ui.SpeakingAIFragment"
+        android:label="fragment_speaking_ai"
+        tools:layout="@layout/fragment_speaking_ai" />
 </navigation>

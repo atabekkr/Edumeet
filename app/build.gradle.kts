@@ -11,7 +11,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.imax.edumeet"
+        applicationId = "uz.imax.edumeet"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

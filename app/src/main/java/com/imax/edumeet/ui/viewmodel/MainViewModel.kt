@@ -3,6 +3,7 @@ package com.imax.edumeet.ui.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.imax.edumeet.data.MainRepository
+import com.imax.edumeet.data.ai.OpenAiRepository
 import com.imax.edumeet.data.models.Notifications
 import com.imax.edumeet.data.models.Rating
 import com.imax.edumeet.data.models.Register
@@ -15,11 +16,29 @@ import com.imax.edumeet.models.SendScore
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor(private val repository: MainRepository) : ViewModel() {
+
+    private val aiRepo = OpenAiRepository()
+
+    private val _gptResponse = MutableStateFlow<String?>(null)
+    val gptResponse: StateFlow<String?> = _gptResponse
+
+    fun sendEssayToGPT(essay: String) {
+        viewModelScope.launch {
+            try {
+                val response = aiRepo.getGPTResponse(essay, )
+                _gptResponse.value = response
+            } catch (e: Exception) {
+                _gptResponse.value = "Error: ${e.message}"
+            }
+        }
+    }
 
     private val _authResult = MutableSharedFlow<Result<RegisterResponse>>()
     val authResult: Flow<Result<RegisterResponse>>
