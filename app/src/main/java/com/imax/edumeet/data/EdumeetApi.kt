@@ -1,12 +1,17 @@
 package com.imax.edumeet.data
 
 import com.imax.edumeet.data.models.Notifications
+import com.imax.edumeet.data.models.Rating
+import com.imax.edumeet.data.models.RatingOfStudent
 import com.imax.edumeet.data.models.Register
 import com.imax.edumeet.data.models.RegisterResponse
 import com.imax.edumeet.data.models.Student
+import com.imax.edumeet.data.models.StudentScore
 import com.imax.edumeet.models.CountOfNotification
 import com.imax.edumeet.models.Group
 import com.imax.edumeet.models.Login
+import com.imax.edumeet.models.SectionPercent
+import com.imax.edumeet.models.SendScore
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -42,5 +47,14 @@ interface EdumeetApi {
 
     @PUT("/student/profile")
     suspend fun editName(@Body data: Group) : Response<RegisterResponse>
+
+    @POST("/scores")
+    suspend fun sendScore(@Body data: SendScore) : Response<RatingOfStudent>
+
+    @GET("/student-progress/{studentId}")
+    suspend fun getStudentScores(@Path("studentId") studentId: String) : Response<StudentScore>
+
+    @GET("/lessons/{section}")
+    suspend fun getRatingBySection(@Path("section") section: String) : Response<Rating>
 
 }

@@ -22,7 +22,6 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
-
 @AndroidEntryPoint
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
@@ -44,16 +43,42 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     }
 
     private fun fetchData() {
+        binding.loadingProgressBar.isVisible = true
         viewModel.getCountOfNotification(localStorage.studentId)
+        viewModel.getStudentScores(localStorage.studentId)
     }
 
     private fun setupListeners() {
-        binding.cardListening.setOnClickListener { findNavController().navigate(HomeFragmentDirections.actionMainFragmentToTopicsFragment(LISTENING)) }
-        binding.cardReading.setOnClickListener { findNavController().navigate(HomeFragmentDirections.actionMainFragmentToTopicsFragment(READING)) }
-        binding.cardWriting.setOnClickListener { findNavController().navigate(HomeFragmentDirections.actionMainFragmentToTopicsFragment(WRITING)) }
-        binding.cardSpeaking.setOnClickListener { findNavController().navigate(HomeFragmentDirections.actionMainFragmentToTopicsFragment(SPEAKING)) }
+        binding.cardListening.setOnClickListener {
+            findNavController().navigate(
+                HomeFragmentDirections.actionMainFragmentToTopicsFragment(LISTENING)
+            )
+        }
+        binding.cardReading.setOnClickListener {
+            findNavController().navigate(
+                HomeFragmentDirections.actionMainFragmentToTopicsFragment(
+                    READING
+                )
+            )
+        }
+        binding.cardWriting.setOnClickListener {
+            findNavController().navigate(
+                HomeFragmentDirections.actionMainFragmentToTopicsFragment(
+                    WRITING
+                )
+            )
+        }
+        binding.cardSpeaking.setOnClickListener {
+            findNavController().navigate(
+                HomeFragmentDirections.actionMainFragmentToTopicsFragment(SPEAKING)
+            )
+        }
 
-        binding.btnNotifications.setOnClickListener { findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToNotificationFragment()) }
+        binding.btnNotifications.setOnClickListener {
+            findNavController().navigate(
+                HomeFragmentDirections.actionHomeFragmentToNotificationFragment()
+            )
+        }
 
     }
 
@@ -67,6 +92,33 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 it.printStackTrace()
                 snackBar(it.localizedMessage)
             }
+        }.launchIn(viewLifecycleOwner.lifecycleScope)
+
+        viewModel.getStudentScores.onEach { result ->
+            result.onSuccess { studentScores ->
+                val lessons = studentScores.lessons
+
+                val listening = lessons.singleOrNull { it.lesson == "Listening" }
+                binding.tvListeningPercent.text = "${listening?.percentage}%"
+                binding.progressListening.progress = listening?.percentage ?: 0
+
+                val reading = lessons.singleOrNull { it.lesson == "Reading" }
+                binding.tvReadingPercent.text = "${reading?.percentage}%"
+                binding.progressReading.progress = reading?.percentage ?: 0
+
+                val writing = lessons.singleOrNull { it.lesson == "Writing" }
+                binding.tvWritingPercent.text = "${writing?.percentage}%"
+                binding.progressWriting.progress = writing?.percentage ?: 0
+
+                val speaking = lessons.singleOrNull { it.lesson == "Speaking" }
+                binding.tvSpeakingPercent.text = "${speaking?.percentage}%"
+                binding.progressSpeaking.progress = speaking?.percentage?: 0
+            }
+            result.onFailure {
+                it.printStackTrace()
+                snackBar(it.localizedMessage)
+            }
+            binding.loadingProgressBar.isVisible = false
         }.launchIn(viewLifecycleOwner.lifecycleScope)
     }
 }

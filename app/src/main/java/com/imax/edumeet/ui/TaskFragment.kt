@@ -122,7 +122,9 @@ class TaskFragment : Fragment(R.layout.fragment_task) {
                     if (questionClassic?.correct_answer == selectText || questionTrueFalse?.correct_answer == selectedBoolean || matchingCorrect) result++
                     findNavController().navigate(
                         TaskFragmentDirections.actionTaskFragmentToResultFragment(
-                            result
+                            result,
+                            navArgs.sectionId,
+                            navArgs.topicId
                         )
                     )
                 } else {

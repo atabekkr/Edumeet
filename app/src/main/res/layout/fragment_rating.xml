@@ -1,8 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.RatingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/standard_icon_size"
+                android:layout_height="@dimen/standard_icon_size"
+                android:layout_margin="@dimen/small_125"
+                android:padding="@dimen/small_125"
+                android:src="@drawable/ic_back"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_bold"
+                android:gravity="center_horizontal"
+                android:text="@string/rating"
+                android:textColor="@color/typography_2"
+                android:textSize="@dimen/medium_size_text"
+                app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/normal_150"
+            android:layout_marginTop="@dimen/small_75"
+            app:hintEnabled="false">
+
+            <AutoCompleteTextView
+                android:id="@+id/select_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext_unselected"
+                android:fontFamily="@font/font_bold"
+                android:inputType="none"
+                android:text="@string/listening"
+                android:textColor="@color/brand_color"
+                android:textSize="@dimen/normal_text_100" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_150"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_rating" />
+
+        <TextView
+            android:id="@+id/tv_not_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_regular"
+            android:gravity="center_horizontal"
+            android:text="@string/nothing_to_show"
+            android:textColor="@color/typography_2"
+            android:textSize="@dimen/medium_size_text"
+            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+            app:layout_constraintTop_toTopOf="@id/btn_back" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

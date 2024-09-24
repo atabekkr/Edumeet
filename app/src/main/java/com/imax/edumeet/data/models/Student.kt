@@ -1,7 +1,6 @@
 package com.imax.edumeet.data.models
 
 data class Student(
-    val __v: Int,
     val _id: String,
     val group: String,
     val name: String,
