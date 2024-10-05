@@ -83,14 +83,19 @@
                     android:textSize="@dimen/medium_size_text"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                <ImageView
                     android:id="@+id/btn_send"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
                     android:layout_margin="@dimen/normal_100"
+                    android:background="@drawable/bg_mic"
+                    android:cropToPadding="true"
+                    android:padding="@dimen/small_100"
+                    android:scaleType="centerInside"
                     android:src="@drawable/ic_send"
                     app:layout_constraintBottom_toBottomOf="@id/et_essay"
-                    app:layout_constraintEnd_toEndOf="@id/et_essay" />
+                    app:layout_constraintEnd_toEndOf="@id/et_essay"
+                    app:tint="@color/brand_color" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

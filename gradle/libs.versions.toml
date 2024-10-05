@@ -1,6 +1,7 @@
 [versions]
 agp = "8.6.0"
 converterGson = "2.9.0"
+glide = "4.16.0"
 loggingInterceptor = "5.0.0-alpha.6"
 youtubePlayer = "12.1.0"
 kotlin = "1.9.0"
@@ -26,6 +27,7 @@ androidx-room = { group = "androidx.room", name = "room-ktx", version.ref = "roo
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterGson" }
 youtube-player = { group = "com.pierfrancescosoffritti.androidyoutubeplayer", name = "core", version.ref = "youtubePlayer" }

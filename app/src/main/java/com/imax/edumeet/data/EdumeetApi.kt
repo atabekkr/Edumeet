@@ -1,6 +1,7 @@
 package com.imax.edumeet.data
 
 import com.imax.edumeet.data.models.Notifications
+import com.imax.edumeet.data.models.ProfileImage
 import com.imax.edumeet.data.models.Rating
 import com.imax.edumeet.data.models.RatingOfStudent
 import com.imax.edumeet.data.models.Register
@@ -44,6 +45,9 @@ interface EdumeetApi {
 
     @PUT("/student/profile")
     suspend fun editPhoneAndPassword(@Body data: Login) : Response<RegisterResponse>
+
+    @PUT("/student/profile")
+    suspend fun editProfileImage(@Body data: ProfileImage) : Response<RegisterResponse>
 
     @PUT("/student/profile")
     suspend fun editName(@Body data: Group) : Response<RegisterResponse>

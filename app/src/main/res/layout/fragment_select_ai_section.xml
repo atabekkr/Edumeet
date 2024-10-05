@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.SelectAISectionFragment">
 
@@ -37,90 +37,45 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_writing"
-        app:cardCornerRadius="@dimen/small_150"
-        app:strokeWidth="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/normal_150"
         android:layout_marginTop="@dimen/normal_100"
-        android:backgroundTint="@color/inputs_color">
+        android:backgroundTint="@color/inputs_color"
+        app:cardCornerRadius="@dimen/small_150"
+        app:strokeWidth="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/bg_writing"
             android:orientation="horizontal"
             android:weightSum="10">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="@dimen/normal_125"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/normal_150"
                 android:layout_weight="9"
-                android:orientation="vertical">
-
-                <TextView
-                    app:layout_constraintBottom_toBottomOf="@id/btn_back"
-                    app:layout_constraintTop_toTopOf="@id/btn_back"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/normal_100"
-                    android:fontFamily="@font/font_bold"
-                    android:gravity="center_horizontal"
-                    android:text="@string/writing"
-                    android:textColor="@color/typography_3"
-                    android:textSize="@dimen/medium_size_text" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="10">
-
-                    <ProgressBar
-                        android:id="@+id/progress_writing"
-                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_weight="9"
-                        android:max="100"
-                        android:progress="60"
-                        android:progressBackgroundTint="@color/white"
-                        android:progressTint="@color/brand_color" />
-
-                    <TextView
-                        android:id="@+id/tv_writing_percent"
-                        app:layout_constraintBottom_toBottomOf="@id/btn_back"
-                        app:layout_constraintTop_toTopOf="@id/btn_back"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginVertical="@dimen/normal_100"
-                        android:layout_marginStart="@dimen/small_75"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/font_bold"
-                        android:gravity="center_horizontal"
-                        android:text="60%"
-                        android:textColor="@color/brand_color"
-                        android:textSize="@dimen/medium_size_text" />
-
-                </LinearLayout>
-
-            </LinearLayout>
+                android:fontFamily="@font/font_bold"
+                android:text="@string/writing"
+                android:textColor="@color/typography_3"
+                android:textSize="@dimen/medium_size_text"
+                app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                app:layout_constraintTop_toTopOf="@id/btn_back" />
 
             <ImageView
-                app:tint="@color/brand_color"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="@dimen/normal_200"
                 android:layout_weight="1"
                 android:rotation="180"
-                android:src="@drawable/ic_back" />
+                android:src="@drawable/ic_back"
+                app:tint="@color/brand_color" />
 
         </LinearLayout>
 
@@ -128,87 +83,43 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_speaking"
-        app:cardCornerRadius="@dimen/small_150"
-        app:strokeWidth="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/normal_150"
         android:layout_marginTop="@dimen/normal_100"
-        android:backgroundTint="@color/inputs_color">
+        android:backgroundTint="@color/inputs_color"
+        app:cardCornerRadius="@dimen/small_150"
+        app:strokeWidth="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/bg_speaking"
             android:orientation="horizontal"
             android:weightSum="10">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="@dimen/normal_125"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/normal_150"
                 android:layout_weight="9"
-                android:orientation="vertical">
-
-                <TextView
-                    app:layout_constraintBottom_toBottomOf="@id/btn_back"
-                    app:layout_constraintTop_toTopOf="@id/btn_back"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/normal_100"
-                    android:fontFamily="@font/font_bold"
-                    android:gravity="center_horizontal"
-                    android:text="@string/speaking"
-                    android:textColor="@color/typography_3"
-                    android:textSize="@dimen/medium_size_text" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="10">
-
-                    <ProgressBar
-                        android:id="@+id/progress_speaking"
-                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_weight="9"
-                        android:max="100"
-                        android:progress="60"
-                        android:progressBackgroundTint="@color/white"
-                        android:progressTint="@color/brand_color" />
-
-                    <TextView
-                        android:id="@+id/tv_speaking_percent"
-                        app:layout_constraintBottom_toBottomOf="@id/btn_back"
-                        app:layout_constraintTop_toTopOf="@id/btn_back"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginVertical="@dimen/normal_100"
-                        android:layout_marginStart="@dimen/small_75"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/font_bold"
-                        android:gravity="center_horizontal"
-                        android:text="60%"
-                        android:textColor="@color/brand_color"
-                        android:textSize="@dimen/medium_size_text" />
-
-                </LinearLayout>
-
-            </LinearLayout>
+                android:fontFamily="@font/font_bold"
+                android:text="@string/speaking"
+                android:textColor="@color/typography_3"
+                android:textSize="@dimen/medium_size_text"
+                app:layout_constraintBottom_toBottomOf="@id/btn_back"
+                app:layout_constraintTop_toTopOf="@id/btn_back" />
 
             <ImageView
-                app:tint="@color/brand_color"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="@dimen/normal_200"
                 android:layout_weight="1"
                 android:rotation="180"
-                android:src="@drawable/ic_back" />
+                android:src="@drawable/ic_back"
+                app:tint="@color/brand_color" />
 
         </LinearLayout>
 

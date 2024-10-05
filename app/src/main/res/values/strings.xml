@@ -43,5 +43,6 @@
     <string name="rating">Rating</string>
     <string name="topic">Topic</string>
     <string name="response">Response:</string>
-    <string name="select_ai">Select AI</string>
+    <string name="select_ai">AI Function</string>
+    <string name="go_to_ai">Go to Ai</string>
 </resources>

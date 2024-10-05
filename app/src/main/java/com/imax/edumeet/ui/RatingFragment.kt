@@ -1,9 +1,7 @@
 package com.imax.edumeet.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.ArrayAdapter
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -27,7 +25,7 @@ class RatingFragment : Fragment(R.layout.fragment_rating) {
     )
     private val viewModel by viewModels<MainViewModel>()
 
-    private val adapter = RatingOfStudentAdapter()
+    private var isSectionsOpen = false
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -49,15 +47,44 @@ class RatingFragment : Fragment(R.layout.fragment_rating) {
             viewModel.getRatingBySection(section.toString())
         }
 
-        val listOfGroups = listOf("Listening", "Reading", "Writing", "Speaking")
-        val arrayAdapter = ArrayAdapter(requireContext(), R.layout.item_section, listOfGroups)
-        binding.selectSection.setAdapter(arrayAdapter)
-
-        binding.recyclerView.adapter = adapter
     }
 
     private fun setupListeners() {
         binding.btnBack.setOnClickListener { findNavController().popBackStack() }
+        binding.tilSection.setOnClickListener {
+            if (isSectionsOpen) {
+                binding.sections.visibility = View.GONE
+                binding.ivDropDown.rotation = 0f
+            } else {
+                binding.ivDropDown.rotation = 180f
+                binding.sections.visibility = View.VISIBLE
+            }
+            isSectionsOpen = !isSectionsOpen
+        }
+        binding.tvSectionListening.setOnClickListener {
+            binding.selectSection.setText(R.string.listening)
+            binding.sections.visibility = View.GONE
+            binding.ivDropDown.rotation = 0f
+            isSectionsOpen = false
+        }
+        binding.tvSectionReading.setOnClickListener {
+            binding.selectSection.setText(R.string.reading)
+            binding.sections.visibility = View.GONE
+            binding.ivDropDown.rotation = 0f
+            isSectionsOpen = false
+        }
+        binding.tvSectionWriting.setOnClickListener {
+            binding.selectSection.setText(R.string.writing)
+            binding.sections.visibility = View.GONE
+            binding.ivDropDown.rotation = 0f
+            isSectionsOpen = false
+        }
+        binding.tvSectionSpeaking.setOnClickListener {
+            binding.selectSection.setText(R.string.speaking)
+            binding.sections.visibility = View.GONE
+            binding.ivDropDown.rotation = 0f
+            isSectionsOpen = false
+        }
     }
 
     private fun setupObservers() {
@@ -66,7 +93,8 @@ class RatingFragment : Fragment(R.layout.fragment_rating) {
                 if (it.data.isNotEmpty()) {
                     binding.tvNotFound.visibility = View.GONE
                     binding.recyclerView.visibility = View.VISIBLE
-                    adapter.submitList(it.data)
+                    val adapter = RatingOfStudentAdapter(it.data)
+                    binding.recyclerView.adapter = adapter
                 } else {
                     binding.tvNotFound.visibility = View.VISIBLE
                     binding.recyclerView.visibility = View.GONE

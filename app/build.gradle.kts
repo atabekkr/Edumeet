@@ -79,4 +79,6 @@ dependencies {
 
     //Youtube video player
     implementation(libs.youtube.player)
+
+    implementation(libs.glide)
 }

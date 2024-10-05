@@ -6,82 +6,163 @@
     android:layout_height="match_parent"
     tools:context=".ui.RatingFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/app_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/btn_back"
-                android:layout_width="@dimen/standard_icon_size"
-                android:layout_height="@dimen/standard_icon_size"
-                android:layout_margin="@dimen/small_125"
-                android:padding="@dimen/small_125"
-                android:src="@drawable/ic_back"
-                android:visibility="invisible"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/tv_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font_bold"
-                android:gravity="center_horizontal"
-                android:text="@string/rating"
-                android:textColor="@color/typography_2"
-                android:textSize="@dimen/medium_size_text"
-                app:layout_constraintBottom_toBottomOf="@id/btn_back"
-                app:layout_constraintTop_toTopOf="@id/btn_back" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/normal_150"
-            android:layout_marginTop="@dimen/small_75"
-            app:hintEnabled="false">
-
-            <AutoCompleteTextView
-                android:id="@+id/select_section"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_edittext_unselected"
-                android:fontFamily="@font/font_bold"
-                android:inputType="none"
-                android:text="@string/listening"
-                android:textColor="@color/brand_color"
-                android:textSize="@dimen/normal_text_100" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/normal_150"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_rating" />
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/standard_icon_size"
+            android:layout_height="@dimen/standard_icon_size"
+            android:layout_margin="@dimen/small_125"
+            android:padding="@dimen/small_125"
+            android:src="@drawable/ic_back"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_not_found"
+            android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/font_regular"
+            android:fontFamily="@font/font_bold"
             android:gravity="center_horizontal"
-            android:text="@string/nothing_to_show"
+            android:text="@string/rating"
             android:textColor="@color/typography_2"
             android:textSize="@dimen/medium_size_text"
             app:layout_constraintBottom_toBottomOf="@id/btn_back"
             app:layout_constraintTop_toTopOf="@id/btn_back" />
-    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_150"
+        android:layout_marginTop="@dimen/small_75"
+        android:background="@drawable/bg_edittext_unselected"
+        android:elevation="1dp"
+        app:layout_constraintTop_toBottomOf="@id/app_bar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/til_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_unselected"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/select_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/normal_100"
+                android:layout_marginStart="@dimen/normal_100"
+                android:fontFamily="@font/font_bold"
+                android:inputType="none"
+                android:text="@string/listening"
+                android:textColor="@color/brand_color"
+                android:textSize="@dimen/normal_text_100"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_drop_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_drop_down"
+                android:layout_marginEnd="@dimen/normal_150"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tint="@color/brand_color" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/sections"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/til_section"
+            app:layout_constraintStart_toStartOf="@id/til_section"
+            app:layout_constraintTop_toBottomOf="@id/til_section">
+
+            <TextView
+                android:id="@+id/tv_section_listening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_bold"
+                android:padding="@dimen/small_125"
+                android:text="@string/listening"
+                android:textColor="@color/brand_color"
+                android:textSize="@dimen/normal_text_100" />
+
+            <TextView
+                android:id="@+id/tv_section_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_bold"
+                android:padding="@dimen/small_125"
+                android:text="@string/reading"
+                android:textColor="@color/brand_color"
+                android:textSize="@dimen/normal_text_100" />
+
+            <TextView
+                android:id="@+id/tv_section_writing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_bold"
+                android:padding="@dimen/small_125"
+                android:text="@string/writing"
+                android:textColor="@color/brand_color"
+                android:textSize="@dimen/normal_text_100" />
+
+            <TextView
+                android:id="@+id/tv_section_speaking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_bold"
+                android:padding="@dimen/small_125"
+                android:text="@string/speaking"
+                android:textColor="@color/brand_color"
+                android:textSize="@dimen/normal_text_100" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_150"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/guideLine"
+        tools:listitem="@layout/item_rating" />
+
+    <TextView
+        android:id="@+id/tv_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_regular"
+        android:gravity="center_horizontal"
+        android:text="@string/nothing_to_show"
+        android:textColor="@color/typography_2"
+        android:textSize="@dimen/medium_size_text"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/guideLine"
+        app:layout_constraintTop_toTopOf="@id/guideLine" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

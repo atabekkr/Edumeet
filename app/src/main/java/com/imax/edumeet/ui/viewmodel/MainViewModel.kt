@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.imax.edumeet.data.MainRepository
 import com.imax.edumeet.data.ai.OpenAiRepository
 import com.imax.edumeet.data.models.Notifications
+import com.imax.edumeet.data.models.ProfileImage
 import com.imax.edumeet.data.models.Rating
 import com.imax.edumeet.data.models.Register
 import com.imax.edumeet.data.models.RegisterResponse
@@ -83,6 +84,12 @@ class MainViewModel @Inject constructor(private val repository: MainRepository) 
     fun editPhoneAndPassword(data: Login) {
         viewModelScope.launch {
             _authResult.emit(repository.editPhoneAndPassword(data))
+        }
+    }
+
+    fun editProfileImage(data: ProfileImage) {
+        viewModelScope.launch {
+            _authResult.emit(repository.editProfileImage(data))
         }
     }
 

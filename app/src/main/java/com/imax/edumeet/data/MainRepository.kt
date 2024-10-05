@@ -1,6 +1,7 @@
 package com.imax.edumeet.data
 
 import com.imax.edumeet.data.models.Notifications
+import com.imax.edumeet.data.models.ProfileImage
 import com.imax.edumeet.data.models.Rating
 import com.imax.edumeet.data.models.RatingOfStudent
 import com.imax.edumeet.data.models.Register
@@ -122,6 +123,22 @@ class MainRepository @Inject constructor(private val api: EdumeetApi) {
     suspend fun editPhoneAndPassword(data: Login): Result<RegisterResponse> {
         return try {
             val response = api.editPhoneAndPassword(data)
+            val responseBody = response.body()
+            if (response.isSuccessful && responseBody != null) {
+                Result.success(responseBody)
+            } else {
+                val message = response.errorBody()?.string()
+                Result.failure(Exception(message))
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            Result.failure(e)
+        }
+    }
+
+    suspend fun editProfileImage(data: ProfileImage): Result<RegisterResponse> {
+        return try {
+            val response = api.editProfileImage(data)
             val responseBody = response.body()
             if (response.isSuccessful && responseBody != null) {
                 Result.success(responseBody)
