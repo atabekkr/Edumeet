@@ -21,9 +21,15 @@ kirich = "1.5.9"
 daggerHiltVersion = "2.51.1"
 dotsIndicator = "4.3"
 gson = "2.10.1"
+audioRecorder = "1.0.4"
+grpc = "1.38.1"
+cloudSpeech = "1.29.1"
 
 [libraries]
 androidx-room = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
+audio-recorder= { group = "com.github.tougee", name = "audiorecorderview", version.ref = "audioRecorder" }
+io-grpc= { group = "io.grpc", name = "grpc-okhttp", version.ref = "grpc" }
+cloud-speech= { group = "com.google.cloud", name = "google-cloud-speech", version.ref = "cloudSpeech" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }

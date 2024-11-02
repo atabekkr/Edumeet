@@ -10,6 +10,10 @@ android {
     namespace = "com.imax.edumeet"
     compileSdk = 34
 
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
+
     defaultConfig {
         applicationId = "uz.imax.edumeet"
         minSdk = 24
@@ -81,4 +85,8 @@ dependencies {
     implementation(libs.youtube.player)
 
     implementation(libs.glide)
+    implementation(libs.audio.recorder)
+
+    implementation(libs.cloud.speech)
+
 }

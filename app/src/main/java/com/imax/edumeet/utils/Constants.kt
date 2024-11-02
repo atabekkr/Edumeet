@@ -12,4 +12,5 @@ object Constants {
 
     const val BASE_URL = "https://stream-service-api.vercel.app"
 
+    const val TAG: String = "AudioRecorderView"
 }

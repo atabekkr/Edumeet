@@ -17,4 +17,15 @@
     <color name="typography_5">#9E9E9E</color>
     <color name="bg_progress">#E1E4FA</color>
     <color name="transparent">#00000000</color>
+
+    <color name="color_blink">#FF5E5E</color>
+    <color name="color_gray">#D6D6D6</color>
+    <color name="color_blue">#007AFF</color>
+    <color name="color_record_circle_bg">#EE1987FF</color>
+    <color name="text_gray">#bbbbbb</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDarkBlue">#1987FF</color>
 </resources>
