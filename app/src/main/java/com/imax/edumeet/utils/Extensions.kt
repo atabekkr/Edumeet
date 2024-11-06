@@ -15,6 +15,9 @@ import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import java.io.ByteArrayOutputStream
 import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import java.io.FileOutputStream
 import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.TimeZone
@@ -72,3 +75,45 @@ fun resizePhoto(bitmap: Bitmap): Bitmap {
 
 
 }
+
+//fun convertPcmToMp3(pcmFile: File, mp3File: File) {
+//    try {
+//        val inputStream = FileInputStream(pcmFile)
+//        val outputStream = FileOutputStream(mp3File)
+//
+//        // Initialize Lame library (Assuming you have the necessary Lame library setup)
+//        val lame = Lame()
+//
+//        // Set up the configuration for Lame encoding
+//        lame.init(inputSampleRate, outputSampleRate, channels, bitrate, quality)
+//
+//        val buffer = ByteArray(1024)
+//        var bytesToRead: Int
+//
+//        // Read PCM data and encode to MP3
+//        while (inputStream.read(buffer).also { bytesToRead = it } != -1) {
+//            val encodedBytes = lame.encode(buffer, buffer, bytesToRead)
+//            if (encodedBytes > 0) {
+//                outputStream.write(buffer, 0, encodedBytes)
+//            }
+//        }
+//
+//        // Finalize encoding
+//        val finalBytes = lame.flush(buffer)
+//        if (finalBytes > 0) {
+//            outputStream.write(buffer, 0, finalBytes)
+//        }
+//
+//        // Close streams
+//        inputStream.close()
+//        outputStream.close()
+//
+//        // Release resources
+//        lame.close()
+//
+//    } catch (e: FileNotFoundException) {
+//        e.printStackTrace()
+//    } catch (e: Exception) {
+//        e.printStackTrace()
+//    }
+//}

@@ -1,5 +1,6 @@
 package com.imax.edumeet.data.ai
 
+import com.imax.edumeet.utils.Constants
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -35,9 +36,7 @@ class OpenAiRepository {
 
 
     suspend fun getGPTResponse(userInput: String): String {
-        val apiKey =
-            "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"
-        val authHeader = "Bearer $apiKey"
+        val authHeader = "Bearer ${Constants.OPEN_AI_API_KEY}"
         val request = ChatCompletionRequest(
             model = "gpt-4o-mini",
             messages = listOf(

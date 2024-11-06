@@ -5,4 +5,5 @@ plugins {
     alias(libs.plugins.safeargs.kotlin) apply false
     alias(libs.plugins.devtools.ksp) apply false
     alias(libs.plugins.dagger) apply false
+    alias(libs.plugins.serialization) apply  false
 }

@@ -4,15 +4,12 @@ plugins {
     alias(libs.plugins.safeargs.kotlin)
     alias(libs.plugins.devtools.ksp)
     alias(libs.plugins.dagger)
+    alias(libs.plugins.serialization)
 }
 
 android {
     namespace = "com.imax.edumeet"
     compileSdk = 34
-
-    packagingOptions {
-        resources.excludes.add("META-INF/*")
-    }
 
     defaultConfig {
         applicationId = "uz.imax.edumeet"
@@ -42,6 +39,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -87,6 +85,20 @@ dependencies {
     implementation(libs.glide)
     implementation(libs.audio.recorder)
 
-    implementation(libs.cloud.speech)
+    // Ktor for Android networking
+    implementation("io.ktor:ktor-client-android:2.3.12")
+
+    // Ktor core
+    implementation("io.ktor:ktor-client-core:2.3.12")
+
+    // Content negotiation for serializing JSON
+    implementation("io.ktor:ktor-client-content-negotiation:2.3.12")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.12")
+
+    // Ktor logging for debugging HTTP requests
+    implementation("io.ktor:ktor-client-logging:2.3.12")
+
+    // Kotlin serialization for handling JSON data
+    implementation("io.ktor:ktor-client-serialization:2.3.12")
 
 }

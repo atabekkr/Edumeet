@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nested_nav_graph.xml"
-    app:startDestination="@id/audioSampleFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -143,9 +143,4 @@
         android:name="com.imax.edumeet.ui.SpeakingAIFragment"
         android:label="fragment_speaking_ai"
         tools:layout="@layout/fragment_speaking_ai" />
-    <fragment
-        android:id="@+id/audioSampleFragment"
-        android:name="com.imax.edumeet.ui.AudioSampleFragment"
-        android:label="fragment_audio_sample"
-        tools:layout="@layout/fragment_audio_sample" />
 </navigation>

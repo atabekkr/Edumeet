@@ -84,32 +84,37 @@
                     android:textSize="@dimen/medium_size_text"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
-                    android:id="@+id/btn_mic"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_margin="@dimen/normal_100"
-                    android:background="@drawable/bg_mic"
-                    android:cropToPadding="true"
-                    android:padding="@dimen/small_100"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/ic_mic"
-                    app:layout_constraintBottom_toBottomOf="@id/et_essay"
-                    app:layout_constraintEnd_toStartOf="@id/btn_send"
-                    app:tint="@color/brand_color" />
+                <com.tougee.recorderview.AudioRecordView
+                    android:id="@+id/record_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mic_icon="@drawable/ic_mic"
+                    android:layout_alignParentBottom="true"
+                    app:circle_color="@color/brand_color"
+                    android:layout_marginBottom="@dimen/small_100"
+                    android:layout_marginHorizontal="@dimen/small_100"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.88" />
 
                 <ImageView
                     android:id="@+id/btn_send"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:layout_margin="@dimen/normal_100"
-                    android:background="@drawable/bg_mic"
                     android:cropToPadding="true"
+                    android:layout_marginEnd="@dimen/normal_100"
+                    android:layout_marginBottom="3dp"
                     android:padding="@dimen/small_100"
+                    android:background="?selectableItemBackground"
                     android:scaleType="centerInside"
                     android:src="@drawable/ic_send"
-                    app:layout_constraintBottom_toBottomOf="@id/et_essay"
-                    app:layout_constraintEnd_toEndOf="@id/et_essay"
+                    app:layout_constraintBottom_toBottomOf="@id/record_view"
+                    app:layout_constraintEnd_toStartOf="@id/guideLine"
                     app:tint="@color/brand_color" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
