@@ -18,6 +18,12 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        buildConfigField(
+            "String",
+            "OPEN_AI_KEY",
+            "\"${project.findProperty("OPEN_AI_KEY")}\""
+        )
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
